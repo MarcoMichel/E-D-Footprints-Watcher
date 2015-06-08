@@ -1,2 +1,2 @@
 # E:D-Footprints-Watcher
-lokal Watcher for E:D-Footprints
+local Watcher for E:D-Footprints
