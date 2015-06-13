@@ -1,0 +1,1009 @@
+15-05-11-16:49 Mitteleuropäische Sommerzeit  (14:49 GMT) - part 1
+{16:50:01} GetPortMapping(59949) failed with code 402 (Invalid Args)
+{16:50:01} GetPortMapping(59949) External 0.0.0.0:59949 -> internal 192.168.1.107:59949 (0)
+{16:50:01} New machine:0.0.0.0:0 x 0 Name Unknown
+{16:50:02} New machine:192.168.1.107:59949 x 0 Name Unknown
+{16:50:02} Start Log for this machine: 192.168.1.107:59949 - 
+{16:50:16} Turn State: Resolving
+{16:50:16} Turn State: Resolved
+{16:50:16} Turn State: Allocating
+{16:50:16} Turn Thread Started
+{16:50:16} STUN server address is 54.155.26.12:3478
+{16:50:16} peer: STUN mapped address is 95.90.230.28:55677
+{16:50:17} Turn State: Ready
+{16:50:17} TURN relay address is 54.155.26.12:64617
+{16:50:17} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id></commander_id><name>4d617276696e20426967204e757473</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{16:50:35} ConnectToServerActivity: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e37382e322e313734</ip><port>19364</port></server></servers><rescueservers><server><ip>3137362e33342e39352e313237</ip><port>19364</port></server></rescueservers></data>
+{16:50:35} New machine:54.78.2.174:19364 x 0 Name Unknown
+{16:50:35} New Primary Server: 54.78.2.174:19364
+{16:50:35} New machine:176.34.95.127:19364 x 0 Name Unknown
+{16:50:35} New Rescue Server: 176.34.95.127:19364
+{16:50:35} Now using address 95.90.230.28:55677 for this machine after STUN reply
+{16:50:35} Sync Established
+{16:50:35} Register fingerprint 72396bc0 for 54.78.2.174:19364 x 9 EDServer#365
+{16:50:35} Connected: 54.78.2.174:19364 x 9 EDServer#365
+{16:50:35} IJoinSession:MyTalk: 0x000000024bd64d98: 95.90.230.28:55677 x 6 (192.168.1.107:59949) Name Unknown
+{16:50:36} Message too large (MTU)
+{16:50:36} Message too large (MTU)
+{16:50:37} Established MTU=1452
+{16:50:37} IJoinSession:Server (unspecified): 0x0000050ae8dbe938: 95.90.230.28:55677 x 9 (192.168.1.107:59949) Name Unknown
+{16:50:38} CANCEL:54.78.2.174:19364 x 11 EDServer#365|SESRQSession 0x0000050ae8dbe938 { x4 } 'Server (unspecified)' 1:0:1 members(0x0000050ae8dbe938,0x0000050ae98a7000)|
+{16:50:38}  JoinSession:Server (unspecified): 0x0000050ae8dbe938: 54.78.2.174:19364 x 10 EDServer#365
+{16:50:38} Sync Established
+{16:50:38} Register fingerprint 73750947 for 176.34.95.127:19364 x 8 EDServer#417
+{16:50:38} Connected: 176.34.95.127:19364 x 8 EDServer#417
+{16:50:38} CANCEL:176.34.95.127:19364 x 11 EDServer#417|SESRQSession 0x0000050ae8dbe938 { x6 } 'Server (unspecified)' 0:0:2 members(0x0000050ae8dbe938,0x0000050ae98a7000)|
+{16:50:38} CANCEL:176.34.95.127:19364 x 9 EDServer#417|SESRQSession 0x000000024bd64d98 { x5 } 'MyTalk' 0:0:1 members(0x000000024bd64d98,0x0000050ae98a7000)|
+{16:50:38} IJoinSession:Server (unspecified): 0x0000050ac4657abe: 95.90.230.28:55677 x 11 (192.168.1.107:59949) Name Unknown
+{16:50:38} CANCEL:176.34.95.127:19364 x 10 EDServer#417|SESRQSession 0x0000050ac4657abe { x4 } 'Server (unspecified)' 1:0:1 members(0x0000050ac4657abe,0x0000050ae98a7000)|
+{16:50:38}  JoinSession:Server (unspecified): 0x0000050ac4657abe: 176.34.95.127:19364 x 9 EDServer#417
+{16:51:10} IJoinSession:BeaconSession: 0x0000050ae98a7002: 95.90.230.28:55677 x 17 (192.168.1.107:59949) Name Unknown
+{16:51:11} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.02
+{16:51:11} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e37382e322e313734</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{16:51:11} EnterLocation: Using UDP server address 54.78.2.174:19364 from webserver
+{16:51:11} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=0.15
+{16:51:11} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.17&Duration=0.00
+{16:51:11} System:20(Koria) Body:34 Pos:(-912.113,387.702,-133.182) 
+{16:51:12} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.60
+{16:51:14} Took over 0.000000 seconds waiting for
+[ 1 ] Shared Objects that still are not live
+ OutpostIndMedium02 0x00000000c0639e00 State=AwaitingReadyToGoLive
+Carrying on bravely in the hope that nothing breaks
+{16:51:17} Took over 0.000000 seconds waiting for
+[ 1 ] Shared Objects that still are not live
+ OutpostIndMedium02 0x00000000c0639e00 State=AwaitingReadyToGoLive
+Carrying on bravely in the hope that nothing breaks
+{16:51:17} vvv------------ ISLAND 0x00000001 CLAIMED ------------vvv
+{16:51:17} ^^^------------ island 0x00000001 claimed ------------^^^
+{16:51:17} FindBestIsland:FRESH:Zero Sense:18446744073709551615:Liouville Prospect:Koria
+None found - create new 0x0000050ae8dbeb03(-) (wake=0x0000050ae8dbeb04)
+
+{16:51:17} IJoinSession:Island: 0x0000050ae8dbeb03: 95.90.230.28:55677 x 43 (192.168.1.107:59949) Name Unknown
+{16:51:17} IJoinSession:Wake: 0x0000050ae8dbeb04: 95.90.230.28:55677 x 44 (192.168.1.107:59949) Name Unknown
+{16:51:17} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.18&Duration=6.04
+{16:51:17} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.03&Duration=6.20
+{16:51:17} Waiting for Authority Stability on 1 objects
+{16:51:17} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=6.23&Duration=0.00
+{16:51:17} System:20(Koria) Body:34 Pos:(-912.113,387.702,-133.182) 
+{16:51:20} Took over 0.000000 seconds waiting for
+[ 1 ] Shared Objects that still are not live
+ OutpostIndMedium02 0x00000000c0639e00 State=AwaitingReadyToGoLive
+Carrying on bravely in the hope that nothing breaks
+{16:51:23} Took over 0.000000 seconds waiting for
+[ 1 ] Shared Objects that still are not live
+ OutpostIndMedium02 0x00000000c0639e00 State=AwaitingReadyToGoLive
+Carrying on bravely in the hope that nothing breaks
+{16:51:24} ModularStationAttachComponent: object kinematic Outpost_ComsTower_0x0000000100000026 is not ready
+{16:51:24} ModularStationAttachComponent: object kinematic Outpost_ComsTower_0x0000000100000026 is not ready
+{16:51:24} ModularStationAttachComponent: object kinematic Ind_CargoRackA_0x000000010000002a is not ready
+{16:51:25} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.18&Duration=14.04
+{16:51:36} Dock Permission Received on pad 2
+{16:51:36} Asp_0x0000050ae98a7005 Attempting to spawn docked but pad not in correct state, poking it
+{16:51:37} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=6.23&Duration=20.05
+{16:51:47} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=36.40
+{16:51:47} System:20(Koria) Body:34 Pos:(283.383,-424.577,235.271) 
+{16:51:48} We (Asp_0x0000050ae98a7005) own pad 2 but it's state disagrees, remind it
+{16:52:49} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{16:53:02} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{16:53:04} Dock Permission Received on pad 0
+{16:53:04} We (Adder_0x0000050ae98a7059) own pad 0 but it's state disagrees, remind it
+{16:53:49} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{16:54:02} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{16:54:50} System:20(Koria) Body:34 Pos:(279.741,-424.576,239.59) 
+{16:55:03} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{16:55:27} Ship Adder_0x0000050ae98a7059 clearing docking state
+{16:55:51} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{16:56:03} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{16:56:12} System:20(Koria) Body:34 Pos:(278.092,-424.577,241.502) 
+{16:56:51} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{16:57:59} ServerAdminRegister::Message: <?xml version="1.0" encoding="UTF-8"?><friendsUpdate />
+{16:57:59} Ship Asp_0x0000050ae98a7005 clearing docking state
+{16:58:04} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{16:58:04} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id></commander_id><name>4d617276696e20426967204e757473</name><isDocked></isDocked><pending>0</pending><lastLocation>Main menu</lastLocation><presence>auto</presence><solo>0</solo><privateGroup_id></privateGroup_id><lastSystemAddr></lastSystemAddr><canAccept>0</canAccept><ignored>0</ignored><state>main_menu</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{16:58:04} System:20(Koria) Body:34 Pos:(1205.57,1504.41,2348.86) 
+{16:58:05} Dock Permission Received on pad 1
+{16:58:06} We (Adder_0x0000050ae98a70d3) own pad 1 but it's state disagrees, remind it
+{16:58:14} System:20(Koria) Body:34 Pos:(2513.87,3294.82,4379.28) 
+{16:58:24} System:20(Koria) Body:34 Pos:(3819.74,5082.48,6406.14) 
+{16:58:25} ServerAdminRegister::Message: <?xml version="1.0" encoding="UTF-8"?><friendsUpdate />
+{16:58:25} ServerAdminRegister::Message: <?xml version="1.0" encoding="UTF-8"?><friendsUpdate />
+{16:58:30} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id>497747</commander_id><name>4d617276696e20426967204e757473</name><isDocked>1</isDocked><pending>0</pending><lastLocation>Farack - Mitra Estate</lastLocation><presence>auto</presence><solo>0</solo><privateGroup_id>0</privateGroup_id><lastSystemAddr>3932143293138</lastSystemAddr><canAccept>0</canAccept><ignored>0</ignored><state>open</state><actions><inviteToWing>1</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{16:58:35} System:20(Koria) Body:34 Pos:(5124.97,6869.24,8432) 
+{16:58:46} System:20(Koria) Body:34 Pos:(6430.61,8657.59,10458.9) 
+{16:58:47} System:20(Koria) Body:34 Pos:(6534.8,8800.82,10620.9) 
+{16:58:52} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{16:58:58} System:20(Koria) Body:34 Pos:(7832.67,10597.1,12643.1) 
+{16:59:04} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{16:59:07} ILeftSession(3): 0x0000050ae8dbeb03: 95.90.230.28:55677 x 107 (192.168.1.107:59949) Name Unknown
+{16:59:07} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.08
+{16:59:08} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e37382e322e313734</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{16:59:08} EnterLocation: Using UDP server address 54.78.2.174:19364 from webserver
+{16:59:08} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=0.09
+{16:59:08} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.09
+{16:59:08} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.39&Duration=0.00
+{16:59:08} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.40&Duration=0.00
+{16:59:08} System:1(Hyades Sector DM-T b4-1) Body:0 Pos:(6.45393e+009,-4.71549e+009,1.33386e+010) cruising
+{16:59:09} vvv------------ ISLAND 0x00000002 CLAIMED ------------vvv
+{16:59:09} ^^^------------ island 0x00000002 claimed ------------^^^
+{16:59:09} FindBestIsland:Zero Sense:all:Hyades Sector DM-T b4-1:Hyades Sector DM-T b4-1
+None found - create new 0x0000050ae9835da7(+) (wake=0x0000050ae9835da8)
+
+{16:59:09} IJoinSession:Island: 0x0000050ae9835da7: 95.90.230.28:55677 x 51 (192.168.1.107:59949) Name Unknown
+{16:59:09} IJoinSession:Wake: 0x0000050ae9835da8: 95.90.230.28:55677 x 52 (192.168.1.107:59949) Name Unknown
+{16:59:09} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.40&Duration=1.13
+{16:59:09} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.09&Duration=1.45
+{16:59:09} Waiting for Authority Stability on 0 objects
+{16:59:09} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=1.54&Duration=0.00
+{16:59:09} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=1.54&Duration=0.23
+{16:59:20} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=12.72
+{17:00:05} machines=2&numturnlinks=0&backlogtotal=0&backlogmax=0&avgsrtt=211&loss=0.000&&jit=6.125&act1=21.146&act2=0.191
+{17:00:37} ServerAdminRegister::Message: <?xml version="1.0" encoding="utf-8"?>
+<talk><to>314355</to><machine_id>65912f8859c13056</machine_id><lastPingTime>2015-05-11 14:58:30</lastPingTime><server_id>399</server_id><ip_headline>86.139.93.145:58789</ip_headline><ip_lan>192.168.1.30:58789</ip_lan><ip_turns>86.139.93.145:60847</ip_turns><ip_turnr>54.195.230.30:57051</ip_turnr><rc>1</rc><isUpnp>1</isUpnp><bSingleNat>1</bSingleNat><commsID>0x24bd4cbf3</commsID><MTU>1484</MTU></talk>
+{17:00:37} TalkChannelManager: Received Remote Talk Request
+{17:00:37} New machine:86.139.93.145:58789 x 0 Name Unknown
+{17:00:37} ReceiveRoutingData: rs=0 tm=1 fl=F ip=86.139.93.145:58789 pref=86.139.93.145:58789 lan=192.168.1.30:58789 ts=86.139.93.145:60847 tr=54.195.230.30:57051
+{17:00:37} Create TURN channel for 86.139.93.145:58789 x 1 Name Unknown
+{17:00:37} TurnClient:BindChannel:54.195.230.30:57051 : status=0(Success)
+{17:00:37} IJoinSession:Talk: 0x000000024bd4cbf3: 95.90.230.28:55677 x 101 (192.168.1.107:59949) Name Unknown
+{17:00:37} Add machine 86.139.93.145:58789 x 4 Name Unknown (314355) to remote TalkChannel 24bd4cbf3
+{17:00:37} Sync mismatch & sent
+{17:00:37} secret unchanged:8AC71C19B2D91AD0BF6C476F48ACBD843A26602BFB72719108F577B31B0524A7D4E664A0B5A8778781C1ABCFB7129394D22A4FDB95305AD5A53E23FED255DBBA, m_ctx=1a18b820
+{17:00:37} soft sync after hard sync - are params ok?
+{17:00:37} Sync Established
+{17:00:37} Register fingerprint b35886cf for 86.139.93.145:58789 x 7 Name Unknown
+{17:00:37} Connected: 86.139.93.145:58789 x 7 Name Unknown
+{17:00:38} CANCEL:86.139.93.145:58789 x 21 Name Unknown|SESRQSession 0x000000024bd4cbf3 { x4 } 'Talk' 1:0:1 members(0x000000024bd4cbf3,0x0000050ae98a7000)|
+{17:00:38}  JoinSession:Talk: 0x000000024bd4cbf3: 86.139.93.145:58789 x 33 Name Unknown
+{17:00:38} CANCEL:86.139.93.145:58789 x 33 Name Unknown|SESRQSession 0x0000050ae9835da7 { x49 } 'Island' 0:0:1 members(0x0000050ae9835da7,0x0000050ae98a7000)|
+{17:00:38} CANCEL:86.139.93.145:58789 x 31 Name Unknown|SESRQSession 0x0000050ae8dbe938 { x6 } 'Server (unspecified)' 0:0:2 members(0x0000050ae8dbe938,0x0000050ae98a7000)|
+{17:00:38} CANCEL:86.139.93.145:58789 x 29 Name Unknown|SESRQSession 0x0000050ac4657abe { x6 } 'Server (unspecified)' 0:0:2 members(0x0000050ac4657abe,0x0000050ae98a7000)|
+{17:00:38} CANCEL:86.139.93.145:58789 x 27 Name Unknown|SESRQSession 0x0000050ae8dbeb04 { x5 } 'Wake' 0:0:1 members(0x0000050ae8dbeb04,0x0000050ae98a7000)|
+{17:00:38} CANCEL:86.139.93.145:58789 x 25 Name Unknown|SESRQSession 0x0000050ae9835da8 { x7 } 'Wake' 0:0:1 members(0x0000050ae9835da8,0x0000050ae98a7000)|
+{17:00:38} CANCEL:86.139.93.145:58789 x 23 Name Unknown|SESRQSession 0x000000024bd64d98 { x5 } 'MyTalk' 0:0:1 members(0x000000024bd64d98,0x0000050ae98a7000)|
+{17:00:38} CANCEL:86.139.93.145:58789 x 21 Name Unknown|SESRQSession 0x0000050ae98a7002 { x5 } 'BeaconSession' 0:0:1 members(0x0000050ae98a7002,0x0000050ae98a7000)|
+{17:01:13} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'hi howcome youre in haydes sector - looking for the alien relic or the thargoids?'
+{17:01:39} TalkChannelManager::OpenOutgoingChannelTo for UserID 314355
+{17:01:39} TalkChannelManager[314355]: Idle->ListenSent (SUCCESS: Sent new InitiateTalk web request)
+{17:01:39} TalkChannelManager[314355]: ListenSent->ListenResponse (Success: InitiateTalk web request successful, waiting for response via local talkchannel):<?xml version="1.0" encoding="utf-8"?>
+<talk><to>314355</to><machine_id>65912f8859c13056</machine_id><lastPingTime>2015-05-11 14:58:30</lastPingTime><server_id>399</server_id><ip_headline>86.139.93.145:58789</ip_headline><ip_lan>192.168.1.30:58789</ip_lan><ip_turns>86.139.93.145:60847</ip_turns><ip_turnr>54.195.230.30:57051</ip_turnr><rc>1</rc><isUpnp>1</isUpnp><bSingleNat>1</bSingleNat><commsID>0x24bd4cbf3</commsID><MTU>1484</MTU></talk>
+{17:01:39} ReceiveRoutingData: rs=2 tm=1 fl=F ip=86.139.93.145:58789 pref=86.139.93.145:58789 lan=192.168.1.30:58789 ts=86.139.93.145:60847 tr=54.195.230.30:57051
+{17:01:39} Add machine 86.139.93.145:58789 x 8 Name Unknown (314355) to local TalkChannel 24bd64d98
+{17:01:39} CANCEL:86.139.93.145:58789 x 10 Name Unknown|SESRQSession 0x000000024bd64d98 { x5 } 'MyTalk' 1:0:1 members(0x000000024bd64d98,0x0000050ae98a7000)|
+{17:01:40}  JoinSession:MyTalk: 0x000000024bd64d98: 86.139.93.145:58789 x 10 Name Unknown
+{17:01:40} TalkChannelManager[314355]: ListenResponse->Listening (SUCCESS: User has responded via local talkchannel)
+{17:03:18} TalkChannel::SendTextMessageTo[314355] - Escort for my friend. He was on a exploration mission. He was 6000ly away. On his way back, he was afraid to get attacked. He had no weapons. So I gave him protection.
+{17:04:09} ILeftSession(3): 0x0000050ae8dbeb04: 95.90.230.28:55677 x 96 (192.168.1.107:59949) Name Unknown
+{17:04:09} 2 machines overdue: 
+{17:05:17} STUN server address is 54.155.26.12:3478
+{17:05:17} peer: STUN mapped address is 95.90.230.28:55719
+{17:05:17} Established MTU=1452
+{17:05:22} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'nice, plenty of twits playing this game at the moment who would blow him up wiothout a fight....'
+{17:06:39} TalkChannel::SendTextMessageTo[314355] - some pirats maybe. He was so afraid loosing all his exploration data. And he has a lot after a trip with more than 12000ly in total.
+{17:07:29} TalkChannel::SendTextMessageTo[314355] - I had contact with some pirats in unexplored space. NPC. A group of two vulture, one FDL and a python. 
+{17:07:49} TalkChannel::SendTextMessageTo[314355] - better not to fight against this group :-)
+{17:08:30} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id>497747</commander_id><name>4d617276696e20426967204e757473</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Farack</lastLocation><presence>auto</presence><solo>0</solo><privateGroup_id>0</privateGroup_id><lastSystemAddr>3932143293138</lastSystemAddr><canAccept>0</canAccept><ignored>0</ignored><state>open</state><actions><inviteToWing>1</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{17:10:05} machines=3&numturnlinks=0&backlogtotal=0&backlogmax=0&avgsrtt=522&loss=0.000&&jit=0.054&act1=19.383&act2=0.084
+{17:11:09} ILeftSession(3): 0x0000050ae9835da7: 95.90.230.28:55677 x 102 (192.168.1.107:59949) Name Unknown
+{17:11:10} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.06
+{17:11:10} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e37382e322e313734</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{17:11:10} EnterLocation: Using UDP server address 54.78.2.174:19364 from webserver
+{17:11:10} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=0.08
+{17:11:10} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.31&Duration=0.00
+{17:11:10} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.32
+{17:11:10} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.32&Duration=0.00
+{17:11:10} System:3(Lyncis Sector OC-V b2-3) Body:2 Pos:(1.24206e+010,5.62664e+009,-7.32456e+009) cruising
+{17:11:12} vvv------------ ISLAND 0x00000001 CLAIMED ------------vvv
+{17:11:12} ^^^------------ island 0x00000001 claimed ------------^^^
+{17:11:12} FindBestIsland:Zero Sense:all:Lyncis Sector OC-V b2-3 ABC:Lyncis Sector OC-V b2-3
+None found - create new 0x0000050aea59d8f3(+) (wake=0x0000050aea59d8f4)
+
+{17:11:12} IJoinSession:Island: 0x0000050aea59d8f3: 95.90.230.28:55677 x 54 (192.168.1.107:59949) Name Unknown
+{17:11:12} IJoinSession:Wake: 0x0000050aea59d8f4: 95.90.230.28:55677 x 55 (192.168.1.107:59949) Name Unknown
+{17:11:12} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.32&Duration=1.71
+{17:11:12} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.08&Duration=1.97
+{17:11:12} Waiting for Authority Stability on 0 objects
+{17:11:12} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=2.05&Duration=0.00
+{17:11:12} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=2.05&Duration=0.22
+{17:11:23} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=12.59
+{17:12:35} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'agreed, in a dog fight at the mo.  i now have a fully kitted out fdl - miss my vulure - sluggish and the 5 hps are a over rated'
+{17:13:57} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'u can have 2 multi cannons and 2 d2 beams but they make have ltd impact on condas.  u need a 3c beam in the huge hp but that seems less powerful than in vulture and doesnt always lok on target as under neath on belly'
+{17:14:30} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'good thing is other players dont try and interdict u and when u have 4 against u you can boost away'
+{17:15:18} TalkChannel::SendTextMessageTo[314355] - :-) To look like a threat is good :-)
+{17:15:27} TalkChannel::SendTextMessageTo[314355] - Do you go back to the vulture?
+{17:16:12} ILeftSession(3): 0x0000050ae9835da8: 95.90.230.28:55677 x 58 (192.168.1.107:59949) Name Unknown
+{17:16:12} 3 machines overdue: 
+{17:16:59} TalkChannel::SendTextMessageTo[314355] - I am happy with my ASP. 2 2c Beam and 4 1c Multi-Cannons. One A3 Shield Cell, two A Shield Boost. No Power Problems. And a Jump Range with 27ly with my config.
+{17:17:17} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'probably not - it can kill npc small ship really quickly but u lose time killing condas, pythons etc.  '
+{17:17:51} ILeftSession(3): 0x0000050aea59d8f3: 95.90.230.28:55677 x 70 (192.168.1.107:59949) Name Unknown
+{17:17:52} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.06
+{17:17:52} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.06
+{17:17:52} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e3234372e34332e323134</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{17:17:52} EnterLocation: Using UDP server address 54.247.43.214:19364 from webserver
+{17:17:52} New machine:54.247.43.214:19364 x 0 Name Unknown
+{17:17:52} Sync Established
+{17:17:52} Register fingerprint d93260ee for 54.247.43.214:19364 x 10 EDServer#398
+{17:17:52} Connected: 54.247.43.214:19364 x 10 EDServer#398
+{17:17:52} Established MTU=1452
+{17:17:52} IJoinSession:Server (unspecified): 0x0000050ae90ff952: 95.90.230.28:55677 x 50 (192.168.1.107:59949) Name Unknown
+{17:17:53} CANCEL:54.247.43.214:19364 x 11 EDServer#398|SESRQSession 0x0000050ae90ff952 { x4 } 'Server (unspecified)' 1:0:1 members(0x0000050ae90ff952,0x0000050ae98a7000)|
+{17:17:53}  JoinSession:Server (unspecified): 0x0000050ae90ff952: 54.247.43.214:19364 x 10 EDServer#398
+{17:17:53} New Primary Server: 54.247.43.214:19364
+{17:17:53} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=1.04
+{17:17:53} EnterLocation: Activity=WaitForEDServer&note=complete&Start=1.06&Duration=0.00
+{17:17:53} System:89(Nganji) Body:1 Pos:(-6.57738e+009,-1.24466e+010,7.4824e+009) cruising
+{17:17:53} New machine:71.186.195.176:15412 x 0 Name Unknown
+{17:17:53} New machine:92.210.160.170:60327 x 0 Name Unknown
+{17:17:53} vvv------------ ISLAND 0x00000002 CLAIMED ------------vvv
+{17:17:53} 71.186.195.176:15412 x 2 Name Unknown
+{17:17:53} 92.210.160.170:60327 x 2 Name Unknown
+{17:17:53} ^^^------------ island 0x00000002 claimed ------------^^^
+{17:17:53} FindBestIsland:Zero Sense:all:Nganji AB:Nganji
+  Accept 0x0000050ae90d4c7e: with 0 players, health=100.000000, friendscore=0, recentplayers=0
+FindBestIsland complete, 0x0000050ae90d4c7e best health=100.0
+
+{17:17:53} IJoinSession:Island: 0x0000050ae90d4c7e: 95.90.230.28:55677 x 64 (192.168.1.107:59949) Name Unknown
+{17:17:53} IJoinSession:Wake: 0x0000050ae90d4c7f: 95.90.230.28:55677 x 65 (192.168.1.107:59949) Name Unknown
+{17:17:53} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=1.07&Duration=0.07
+{17:17:53} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.07&Duration=1.09
+{17:17:53} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=1.07&Duration=0.14
+{17:17:53} ReceiveRoutingData: rs=1 tm=1 fl=T ip=71.186.195.176:15412 pref=71.186.195.176:15412 lan=10.0.9.59:53627 ts=71.186.195.176:41441 tr=54.68.202.172:50692
+{17:17:53} using TURN connection for 71.186.195.176:15412 x 6 Name Unknown
+{17:17:53} Create TURN channel for 71.186.195.176:15412 x 6 # Name Unknown
+{17:17:53} TurnClient:BindChannel:54.68.202.172:50692 : status=0(Success)
+{17:17:53} ReceiveRoutingData: rs=1 tm=1 fl=T ip=92.210.160.170:60327 pref=92.210.160.170:60327 lan=192.168.2.100:60327 ts=92.210.160.170:61923 tr=54.155.228.109:64989
+{17:17:53} Create TURN channel for 92.210.160.170:60327 x 6 Name Unknown
+{17:17:53} TurnClient:BindChannel:54.155.228.109:64989 : status=0(Success)
+{17:17:53} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=1.16&Duration=0.23
+{17:17:53} Sync Established
+{17:17:53} Register fingerprint 7856d5e5 for 92.210.160.170:60327 x 8 Name Unknown
+{17:17:53} Connected: 92.210.160.170:60327 x 8 Name Unknown
+{17:17:54} CANCEL:92.210.160.170:60327 x 22 Name Unknown|SESRQSession 0x0000050ae90d4c7e { x54 } 'Island' 1:0:1 members(0x0000050ae90d4c7e,0x0000050ae98a7000)|
+{17:17:54} CANCEL:92.210.160.170:60327 x 21 Name Unknown|SESRQSession 0x0000050ae90d4c7f { x7 } 'Wake' 2:0:1 members(0x0000050ae90d4c7f,0x0000050ae98a7000)|
+{17:17:54}  JoinSession:Wake: 0x0000050ae90d4c7f: 92.210.160.170:60327 x 21 Name Unknown
+{17:17:54} CANCEL:92.210.160.170:60327 x 35 Name Unknown|SESRQSession 0x000000024bd4cbf3 { x6 } 'Talk' 0:0:2 members(0x000000024bd4cbf3,0x0000050ae98a7000)|
+{17:17:54} CANCEL:92.210.160.170:60327 x 33 Name Unknown|SESRQSession 0x0000050aea59d8f4 { x5 } 'Wake' 0:0:1 members(0x0000050aea59d8f4,0x0000050ae98a7000)|
+{17:17:54} CANCEL:92.210.160.170:60327 x 31 Name Unknown|SESRQSession 0x0000050ae8dbe938 { x6 } 'Server (unspecified)' 0:0:2 members(0x0000050ae8dbe938,0x0000050ae98a7000)|
+{17:17:54} CANCEL:92.210.160.170:60327 x 29 Name Unknown|SESRQSession 0x0000050ac4657abe { x6 } 'Server (unspecified)' 0:0:2 members(0x0000050ac4657abe,0x0000050ae98a7000)|
+{17:17:54} CANCEL:92.210.160.170:60327 x 27 Name Unknown|SESRQSession 0x000000024bd64d98 { x6 } 'MyTalk' 0:0:2 members(0x000000024bd64d98,0x0000050ae98a7000)|
+{17:17:54} CANCEL:92.210.160.170:60327 x 25 Name Unknown|SESRQSession 0x0000050ae90ff952 { x6 } 'Server (unspecified)' 0:0:2 members(0x0000050ae90ff952,0x0000050ae98a7000)|
+{17:17:54} CANCEL:92.210.160.170:60327 x 23 Name Unknown|SESRQSession 0x0000050ae98a7002 { x5 } 'BeaconSession' 0:0:1 members(0x0000050ae98a7002,0x0000050ae98a7000)|
+{17:18:04} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'main bugbare is overheating - major issue in combat - maybe upgrading to composites will solve this - but really is annoying'
+{17:18:05} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=12.78
+{17:18:07}  LeftSession(3): 0x0000050ae90d4c7f: 92.210.160.170:60327 x 6 Name Unknown
+{17:18:08} Machine 71.186.195.176:15412 x 6 # Name Unknown disconnected: Unable to establish connection with SYNC
+{17:18:08} FailToJoinSession1: 0x0000050ae90d4c7f: at 15.2s : 71.186.195.176:15412 x 5 Name Unknown
+{17:18:08} CANCEL:71.186.195.176:15412 x 5 Name Unknown|SESRQSession 0x0000050ae90d4c7f { x6 } 'Wake' 0:0:1 members(0x0000050ae90d4c7f,0x0000050ae98a7000)|
+{17:18:08} FailToJoinSession1: 0x0000050ae90d4c7e: at 15.2s : 71.186.195.176:15412 x 4 Name Unknown
+{17:18:08} CANCEL:71.186.195.176:15412 x 4 Name Unknown|SESRQSession 0x0000050ae90d4c7e { x53 } 'Island' 0:0:1 members(0x0000050ae90d4c7e,0x0000050ae98a7000)|
+{17:18:09} New Sync
+{17:18:12} secret unchanged:0DBCD55D77BB458E3FD4D92BBD3BCBD9A42F03AF2267AD8CB9F90073B4F5F311A68589D966AF4A247E802E7387610E4790C2A621F86C3D3C8DE6B9781953FD47, m_ctx=19914650
+{17:18:12} Sync mismatch & received
+{17:18:15} secret unchanged:0DBCD55D77BB458E3FD4D92BBD3BCBD9A42F03AF2267AD8CB9F90073B4F5F311A68589D966AF4A247E802E7387610E4790C2A621F86C3D3C8DE6B9781953FD47, m_ctx=19914650
+{17:18:15} Sync mismatch & received
+{17:18:18} secret unchanged:0DBCD55D77BB458E3FD4D92BBD3BCBD9A42F03AF2267AD8CB9F90073B4F5F311A68589D966AF4A247E802E7387610E4790C2A621F86C3D3C8DE6B9781953FD47, m_ctx=19914650
+{17:18:18} Sync mismatch & received
+{17:18:21} secret unchanged:0DBCD55D77BB458E3FD4D92BBD3BCBD9A42F03AF2267AD8CB9F90073B4F5F311A68589D966AF4A247E802E7387610E4790C2A621F86C3D3C8DE6B9781953FD47, m_ctx=19914650
+{17:18:21} Sync mismatch & received
+{17:18:30} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id>497747</commander_id><name>4d617276696e20426967204e757473</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Farack</lastLocation><presence>auto</presence><solo>0</solo><privateGroup_id>0</privateGroup_id><lastSystemAddr>3932143293138</lastSystemAddr><canAccept>0</canAccept><ignored>0</ignored><state>open</state><actions><inviteToWing>1</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{17:18:36} Machine 71.186.195.176:15412 x 2 Name Unknown disconnected: Unable to establish connection with SYNC
+{17:18:39} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'may go for anaconda but unsure whether worthwhile for combat - need turrets'
+{17:18:53} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'never thought of asp -good in combat?'
+{17:19:06} Machine going:71.186.195.176:15412 x 0 Name Unknown srtt=1000
+{17:20:05} machines=5&numturnlinks=0&backlogtotal=0&backlogmax=0&avgsrtt=373&loss=0.000&&jit=0.000&act1=23.210&act2=0.103
+{17:20:17} STUN server address is 54.155.26.12:3478
+{17:20:17} peer: STUN mapped address is 95.90.230.28:55695
+{17:20:17} Established MTU=1452
+{17:20:44} TalkChannel::SendTextMessageTo[314355] - ASP is heavy, so turn rate is not so good, if you compare to Vulture or Viper. In the stats manouver rate is 6, same as Cobra. But I have absolutly no overheating problems, don't need a heat sink.
+{17:21:14} TalkChannel::SendTextMessageTo[314355] - And 2x2c Beam, 4x1c MultiCannons kill smaller Ships in seconds.
+{17:21:53} TalkChannel::SendTextMessageTo[314355] - In a RES with help of Authority I kill Python, Anaconda, FDS and Clipper in Minutes. 
+{17:22:03} TalkChannel::SendTextMessageTo[314355] - But never tried against other CMDRs
+{17:22:53} ILeftSession(3): 0x0000050aea59d8f4: 95.90.230.28:55677 x 202 (192.168.1.107:59949) Name Unknown
+{17:22:53} 2 machines overdue: 
+{17:23:04} TalkChannel::SendTextMessageTo[314355] - So I think ASP is best multiporpose ship
+{17:24:19} TalkChannel::SendTextMessageTo[314355] - and the cockpit view is great
+{17:24:35} TalkChannel::SendTextMessageTo[314355] - like sitting in space. can look all around you
+{17:24:38} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'u r probably right.  only take on other cmdrs if u have shield cells - u can have c3 laser and 3c canon but without cells u will always lose - stupid but thats how it works...'
+{17:24:54} IJoinSession:WingSession: 0x0000050ae98a7406: 95.90.230.28:55677 x 205 (192.168.1.107:59949) Name Unknown
+{17:24:54}  JoinSession:WingSession: 0x0000050ae98a7406: 86.139.93.145:58789 x 12 Name Unknown
+{17:24:59} TalkChannel::SendTextMessageTo[314355] - :-)
+{17:25:32} 2 machines overdue: 
+{17:25:35} ILeftSession(3): 0x0000050ae90d4c7e: 95.90.230.28:55677 x 218 (192.168.1.107:59949) Name Unknown
+{17:25:35} ILeftSession(3): 0x0000050ae8dbe938: 95.90.230.28:55677 x 60 (192.168.1.107:59949) Name Unknown
+{17:25:35}  LeftSession(6): 0x0000050ae8dbe938: 54.78.2.174:19364 x 9 EDServer#365
+{17:25:36} Machine 54.78.2.174:19364 x 7 EDServer#365 disconnected: ServerLink::~
+{17:25:36} allow machine to time out immediately after forced disconnect (ed-31797)
+{17:25:36} Machine going:54.78.2.174:19364 x 0 EDServer#365 srtt=775
+{17:25:36} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.02
+{17:25:36} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.10
+{17:25:36} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e3137302e3138302e3736</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{17:25:36} EnterLocation: Using UDP server address 54.170.180.76:19364 from webserver
+{17:25:36} New machine:54.170.180.76:19364 x 0 Name Unknown
+{17:25:36} Sync Established
+{17:25:36} Register fingerprint 02ae728a for 54.170.180.76:19364 x 10 EDServer#399
+{17:25:36} Connected: 54.170.180.76:19364 x 10 EDServer#399
+{17:25:36} Established MTU=1452
+{17:25:36} IJoinSession:Server (unspecified): 0x0000050aeaa19853: 95.90.230.28:55677 x 62 (192.168.1.107:59949) Name Unknown
+{17:25:37} CANCEL:54.170.180.76:19364 x 11 EDServer#399|SESRQSession 0x0000050aeaa19853 { x4 } 'Server (unspecified)' 1:0:1 members(0x0000050aeaa19853,0x0000050ae98a7000)|
+{17:25:37}  JoinSession:Server (unspecified): 0x0000050aeaa19853: 54.170.180.76:19364 x 10 EDServer#399
+{17:25:37} New Primary Server: 54.170.180.76:19364
+{17:25:37} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=1.20
+{17:25:37} EnterLocation: Activity=WaitForEDServer&note=complete&Start=1.22&Duration=0.00
+{17:25:37} System:89(Nganji) Body:77 Pos:(-6623.67,3144.73,20579.7) 
+{17:25:37} vvv------------ ISLAND 0x00000001 CLAIMED ------------vvv
+{17:25:37} ^^^------------ island 0x00000001 claimed ------------^^^
+{17:25:37} FindBestIsland:Zero Sense:all:Vizcaino Enterprise:Nganji
+None found - create new 0x0000050aeaa19858(-) (wake=0x0000050aeaa19859)
+
+{17:25:37} IJoinSession:Island: 0x0000050aeaa19858: 95.90.230.28:55677 x 115 (192.168.1.107:59949) Name Unknown
+{17:25:37} IJoinSession:Wake: 0x0000050aeaa19859: 95.90.230.28:55677 x 116 (192.168.1.107:59949) Name Unknown
+{17:25:37} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=1.23&Duration=0.08
+{17:25:37} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.03&Duration=1.30
+{17:25:37} Waiting for Authority Stability on 1 objects
+{17:25:37} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=1.33&Duration=0.00
+{17:25:37} System:89(Nganji) Body:77 Pos:(-6426.2,3393.78,19698.2) 
+{17:25:37} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=1.33&Duration=0.24
+{17:25:39} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=1.23&Duration=2.61
+{17:25:41} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=4.95
+{17:25:41} System:89(Nganji) Body:77 Pos:(-6615.23,3141.54,20556.4) 
+{17:25:41} System:89(Nganji) Body:77 Pos:(-5629.88,2558.2,17440.2) 
+{17:25:41} System:89(Nganji) Body:77 Pos:(-4681.45,1996.71,14440.7) 
+{17:25:41} System:89(Nganji) Body:77 Pos:(-3757.18,1449.53,11517.6) 
+{17:25:48} System:89(Nganji) Body:77 Pos:(-2706.25,1128.96,8722.55) 
+{17:25:52} Dock Permission Received on pad 6
+{17:25:52} Dock Permission Received on pad 27
+{17:25:52} Hauler_0x0000050ae98a74df Attempting to spawn docked but pad not in correct state, poking it
+{17:25:53} We (Asp_0x0000050ae98a7408) own pad 6 but it's state disagrees, remind it
+{17:25:54} Hauler_0x0000050ae98a74df Attempting to spawn docked but pad not in correct state, poking it
+{17:25:55} Hauler_0x0000050ae98a74df Attempting to spawn docked but pad not in correct state, poking it
+{17:25:57} System:89(Nganji) Body:77 Pos:(-1157.63,1564.44,6189.51) 
+{17:25:57} Hauler_0x0000050ae98a74df Attempting to spawn docked but pad not in correct state, poking it
+{17:25:59} Hauler_0x0000050ae98a74df Attempting to spawn docked but pad not in correct state, poking it
+{17:26:01} Hauler_0x0000050ae98a74df Attempting to spawn docked but pad not in correct state, poking it
+{17:26:02} We (Hauler_0x0000050ae98a74df) own pad 27 but it's state disagrees, remind it
+{17:26:12} System:89(Nganji) Body:77 Pos:(346.433,1951.61,3621.8) 
+{17:26:15} Dock Permission Received on pad 34
+{17:26:15} Type6_0x0000050ae98a753b Attempting to spawn docked but pad not in correct state, poking it
+{17:26:17} Type6_0x0000050ae98a753b Attempting to spawn docked but pad not in correct state, poking it
+{17:26:19} Type6_0x0000050ae98a753b Attempting to spawn docked but pad not in correct state, poking it
+{17:26:20} Type6_0x0000050ae98a753b Attempting to spawn docked but pad not in correct state, poking it
+{17:26:22} Type6_0x0000050ae98a753b Attempting to spawn docked but pad not in correct state, poking it
+{17:26:22} Dock Permission Received on pad 43
+{17:26:22} CobraMkIII_0x0000050ae98a7550 Attempting to spawn docked but pad not in correct state, poking it
+{17:26:24} Type6_0x0000050ae98a753b Attempting to spawn docked but pad not in correct state, poking it
+{17:26:24} CobraMkIII_0x0000050ae98a7550 Attempting to spawn docked but pad not in correct state, poking it
+{17:26:25} We (Type6_0x0000050ae98a753b) own pad 34 but it's state disagrees, remind it
+{17:26:26} CobraMkIII_0x0000050ae98a7550 Attempting to spawn docked but pad not in correct state, poking it
+{17:26:27} CobraMkIII_0x0000050ae98a7550 Attempting to spawn docked but pad not in correct state, poking it
+{17:26:29} CobraMkIII_0x0000050ae98a7550 Attempting to spawn docked but pad not in correct state, poking it
+{17:26:29} System:89(Nganji) Body:77 Pos:(447.437,899.364,813.097) 
+{17:26:31} CobraMkIII_0x0000050ae98a7550 Attempting to spawn docked but pad not in correct state, poking it
+{17:26:32} We (CobraMkIII_0x0000050ae98a7550) own pad 43 but it's state disagrees, remind it
+{17:26:34} Dock Permission Received on pad 44
+{17:26:35} We (Asp_0x0000050ae98a7450) own pad 44 but it's state disagrees, remind it
+{17:26:41} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_5 requested:1
+{17:26:41} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:26:41} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:27:01} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:27:07} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_3 requested:1
+{17:27:14} Ship Asp_0x0000050ae98a7450 clearing docking state
+{17:27:24} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_2 requested:1
+{17:27:30} Dock Permission Received on pad 23
+{17:27:31} We (Type7_0x0000050ae98a7508) own pad 23 but it's state disagrees, remind it
+{17:27:31} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_1 requested:1
+{17:27:35} New machine:83.125.122.165:60769 x 0 Name Unknown
+{17:27:41} Ship Hauler_0x0000050ae98a74df clearing docking state
+{17:27:41} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:27:41} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_5 requested:1
+{17:27:41} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:27:59} TalkChannel:SendTextMessage (received) Marvin Big Nuts:'just about to add that game is a grind at moment with no interesting cgs, need to cash in warzone bounties now so will probably join u soon.....'
+{17:28:01} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:28:04} Ship CobraMkIII_0x0000050ae98a7550 clearing docking state
+{17:28:07} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_3 requested:1
+{17:28:24} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_2 requested:1
+{17:28:30} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id>497747</commander_id><name>4d617276696e20426967204e757473</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Farack</lastLocation><presence>auto</presence><solo>0</solo><privateGroup_id>0</privateGroup_id><lastSystemAddr>3932143293138</lastSystemAddr><canAccept>0</canAccept><ignored>0</ignored><state>open</state><actions><inviteToWing>1</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{17:28:31} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_1 requested:1
+{17:28:41} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:28:41} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_5 requested:1
+{17:28:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:29:01} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:29:06} New machine:71.186.195.176:15412 x 0 Name Unknown
+{17:29:06} 2 machines overdue: 
+{17:29:07} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_3 requested:1
+{17:29:24} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_2 requested:1
+{17:29:31} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_1 requested:1
+{17:29:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:29:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:29:42} Ship Type6_0x0000050ae98a753b clearing docking state
+{17:30:02} Dock Permission Received on pad 42
+{17:30:02} SideWinder_0x0000050ae98a7646 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:03} SideWinder_0x0000050ae98a7646 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:05} machines=5&numturnlinks=0&backlogtotal=0&backlogmax=0&avgsrtt=356&loss=0.000&&jit=0.012&act1=26.544&act2=0.176
+{17:30:05} SideWinder_0x0000050ae98a7646 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:07} SideWinder_0x0000050ae98a7646 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:07} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_3 requested:1
+{17:30:08} SideWinder_0x0000050ae98a7646 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:10} SideWinder_0x0000050ae98a7646 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:11} We (SideWinder_0x0000050ae98a7646) own pad 42 but it's state disagrees, remind it
+{17:30:24} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_2 requested:1
+{17:30:30} TalkChannel::SendTextMessageTo[314355] - I will be offline in 30 Minutes. Time for barbecue :-) Perfekt weather here.
+{17:30:32} Dock Permission Received on pad 2
+{17:30:32} Asp_0x0000050ae98a7661 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:33} Asp_0x0000050ae98a7661 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:35} Asp_0x0000050ae98a7661 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:37} ILeftSession(3): 0x0000050ae90d4c7f: 95.90.230.28:55677 x 241 (192.168.1.107:59949) Name Unknown
+{17:30:37} 2 machines overdue: 
+{17:30:37} Asp_0x0000050ae98a7661 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:38} Asp_0x0000050ae98a7661 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:40} Asp_0x0000050ae98a7661 Attempting to spawn docked but pad not in correct state, poking it
+{17:30:41} We (Asp_0x0000050ae98a7661) own pad 2 but it's state disagrees, remind it
+{17:30:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:30:42} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_5 requested:1
+{17:30:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:30:49} SCREENSHOT: Saved \ED_Pictures\Screenshot_0001.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{17:31:07} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_3 requested:1
+{17:31:10} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:31:12} SCREENSHOT: Saved \ED_Pictures\Screenshot_0001.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{17:31:25} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_2 requested:1
+{17:31:35} SCREENSHOT: Saved \ED_Pictures\Screenshot_0002.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{17:31:40} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_1 requested:1
+{17:31:41} SCREENSHOT: Saved \ED_Pictures\Screenshot_0003.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{17:31:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:31:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:31:45} SCREENSHOT: Saved \ED_Pictures\Screenshot_0004.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{17:31:53} Ship Type7_0x0000050ae98a7508 clearing docking state
+{17:32:08} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_3 requested:1
+{17:32:11} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:32:25} Dock Permission Received on pad 26
+{17:32:25} SideWinder_0x0000050ae98a76da Attempting to spawn docked but pad not in correct state, poking it
+{17:32:27} SideWinder_0x0000050ae98a76da Attempting to spawn docked but pad not in correct state, poking it
+{17:32:28} SideWinder_0x0000050ae98a76da Attempting to spawn docked but pad not in correct state, poking it
+{17:32:30} SideWinder_0x0000050ae98a76da Attempting to spawn docked but pad not in correct state, poking it
+{17:32:30} Ship SideWinder_0x0000050ae98a7646 clearing docking state
+{17:32:32} SideWinder_0x0000050ae98a76da Attempting to spawn docked but pad not in correct state, poking it
+{17:32:33} SideWinder_0x0000050ae98a76da Attempting to spawn docked but pad not in correct state, poking it
+{17:32:34} We (SideWinder_0x0000050ae98a76da) own pad 26 but it's state disagrees, remind it
+{17:32:40} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_1 requested:1
+{17:32:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:32:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:32:42} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_5 requested:1
+{17:32:48} TalkChannel::SendTextMessageTo[314355] - Is the CG in Quivira finished? There is, or was, a big PvP war. Two CG. One for the Empire and one for FED.
+{17:33:06} Dock Permission Received on pad 16
+{17:33:07} We (Type7_0x0000050ae98a7696) own pad 16 but it's state disagrees, remind it
+{17:33:08} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_3 requested:1
+{17:33:11} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:33:26} Ship Asp_0x0000050ae98a7661 clearing docking state
+{17:33:34} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_2 requested:1
+{17:33:41} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_1 requested:1
+{17:33:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:33:43} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:33:43} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_5 requested:1
+{17:34:11} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:34:34} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_2 requested:1
+{17:34:41} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_1 requested:1
+{17:34:42} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:34:43} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:34:43} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_5 requested:1
+{17:35:09} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_3 requested:1
+{17:35:12} Dock Permission Received on pad 15
+{17:35:12} CobraMkIII_0x0000050ae98a7765 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:13} CobraMkIII_0x0000050ae98a7765 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:15} CobraMkIII_0x0000050ae98a7765 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:17} CobraMkIII_0x0000050ae98a7765 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:18} CobraMkIII_0x0000050ae98a7765 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:20} CobraMkIII_0x0000050ae98a7765 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:21} We (CobraMkIII_0x0000050ae98a7765) own pad 15 but it's state disagrees, remind it
+{17:35:33} Ship SideWinder_0x0000050ae98a76da clearing docking state
+{17:35:35} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_2 requested:1
+{17:35:41} Dock Permission Received on pad 0
+{17:35:41} SideWinder_0x0000050ae98a77a8 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:43} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:35:43} SideWinder_0x0000050ae98a77a8 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:43} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:35:43} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_5 requested:1
+{17:35:45} SideWinder_0x0000050ae98a77a8 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:46} SideWinder_0x0000050ae98a77a8 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:48} SideWinder_0x0000050ae98a77a8 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:50} SideWinder_0x0000050ae98a77a8 Attempting to spawn docked but pad not in correct state, poking it
+{17:35:51} We (SideWinder_0x0000050ae98a77a8) own pad 0 but it's state disagrees, remind it
+{17:36:20} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:36:35} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_2 requested:1
+{17:36:43} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:36:43} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:36:50} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_1 requested:1
+{17:36:59} Ship CobraMkIII_0x0000050ae98a7765 clearing docking state
+{17:37:09} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_3 requested:1
+{17:37:20} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:37:36} Dock Permission Received on pad 30
+{17:37:36} Adder_0x0000050ae98a7883 Attempting to spawn docked but pad not in correct state, poking it
+{17:37:37} Adder_0x0000050ae98a7883 Attempting to spawn docked but pad not in correct state, poking it
+{17:37:39} Ship Asp_0x0000050ae98a7408 clearing docking state
+{17:37:39} Adder_0x0000050ae98a7883 Attempting to spawn docked but pad not in correct state, poking it
+{17:37:41} Adder_0x0000050ae98a7883 Attempting to spawn docked but pad not in correct state, poking it
+{17:37:42} Adder_0x0000050ae98a7883 Attempting to spawn docked but pad not in correct state, poking it
+{17:37:43} System:89(Nganji) Body:77 Pos:(-2074.3,2272.36,-69.0918) 
+{17:37:43} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_0 requested:1
+{17:37:43} Server resource allocation failed, group:00000000c0626300 subgroup:PatrolTraffic_2 requested:1
+{17:37:44} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_5 requested:1
+{17:37:44} Adder_0x0000050ae98a7883 Attempting to spawn docked but pad not in correct state, poking it
+{17:37:45} Dock Permission Received on pad 28
+{17:37:45} We (Adder_0x0000050ae98a7883) own pad 30 but it's state disagrees, remind it
+{17:37:46} We (SideWinder_0x0000050ae98a7855) own pad 28 but it's state disagrees, remind it
+{17:37:50} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_1 requested:1
+{17:37:52} System:89(Nganji) Body:77 Pos:(-4802.95,2998.92,-1096.61) 
+{17:37:53} Ship SideWinder_0x0000050ae98a77a8 clearing docking state
+{17:38:01} System:89(Nganji) Body:77 Pos:(-7530.05,3725.12,-2123.54) 
+{17:38:02} System:89(Nganji) Body:77 Pos:(-7695.89,3769.37,-2185.98) 
+{17:38:13} System:89(Nganji) Body:77 Pos:(-10419.3,4503.5,-3210.42) 
+{17:38:21} Server resource allocation failed, group:00000000c0626300 subgroup:AmbientTraffic_4 requested:1
+{17:38:22} ILeftSession(3): 0x0000050aeaa19858: 95.90.230.28:55677 x 265 (192.168.1.107:59949) Name Unknown
+{17:38:22} ILeftSession(3): 0x0000050ae90ff952: 95.90.230.28:55677 x 78 (192.168.1.107:59949) Name Unknown
+{17:38:22}  LeftSession(6): 0x0000050ae90ff952: 54.247.43.214:19364 x 9 EDServer#398
+{17:38:22} Machine 54.247.43.214:19364 x 7 EDServer#398 disconnected: ServerLink::~
+{17:38:22} allow machine to time out immediately after forced disconnect (ed-31797)
+{17:38:22} Machine going:54.247.43.214:19364 x 0 EDServer#398 srtt=473
+{17:38:23} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.01
+{17:38:23} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.01
+{17:38:23} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e3137302e3138302e3736</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{17:38:23} EnterLocation: Using UDP server address 54.170.180.76:19364 from webserver
+{17:38:23} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=0.17
+{17:38:23} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.18&Duration=0.00
+{17:38:23} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.20&Duration=0.00
+{17:38:23} System:3(Lyncis Sector OC-V b2-3) Body:2 Pos:(-7.64366e+009,6.86639e+009,1.15761e+010) cruising
+{17:38:25} vvv------------ ISLAND 0x00000002 CLAIMED ------------vvv
+{17:38:25} ^^^------------ island 0x00000002 claimed ------------^^^
+{17:38:25} FindBestIsland:Zero Sense:all:Lyncis Sector OC-V b2-3 ABC:Lyncis Sector OC-V b2-3
+None found - create new 0x0000050aeaaed22b(+) (wake=0x0000050aeaaed22c)
+
+{17:38:25} IJoinSession:Island: 0x0000050aeaaed22b: 95.90.230.28:55677 x 88 (192.168.1.107:59949) Name Unknown
+{17:38:25} IJoinSession:Wake: 0x0000050aeaaed22c: 95.90.230.28:55677 x 89 (192.168.1.107:59949) Name Unknown
+{17:38:25} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.20&Duration=2.32
+{17:38:25} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.03&Duration=2.50
+{17:38:25} Waiting for Authority Stability on 0 objects
+{17:38:25} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=2.53&Duration=0.00
+{17:38:25} 2 machines overdue: 
+{17:38:25} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=2.53&Duration=0.23
+{17:38:30} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id>497747</commander_id><name>4d617276696e20426967204e757473</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Farack</lastLocation><presence>auto</presence><solo>0</solo><privateGroup_id>0</privateGroup_id><lastSystemAddr>3932143293138</lastSystemAddr><canAccept>0</canAccept><ignored>0</ignored><state>open</state><actions><inviteToWing>1</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{17:38:35} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=12.66
+{17:39:19} ILeftSession(3): 0x0000050aeaaed22b: 95.90.230.28:55677 x 107 (192.168.1.107:59949) Name Unknown
+{17:39:19} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.02
+{17:39:19} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.02
+{17:39:20} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e3137302e3138302e3736</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{17:39:20} EnterLocation: Using UDP server address 54.170.180.76:19364 from webserver
+{17:39:20} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=0.03
+{17:39:20} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.24&Duration=0.00
+{17:39:20} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.26&Duration=0.00
+{17:39:20} System:1(Hyades Sector DM-T b4-1) Body:0 Pos:(1.31094e+010,3.183e+009,7.73446e+009) cruising
+{17:39:22} vvv------------ ISLAND 0x00000003 CLAIMED ------------vvv
+{17:39:22} ^^^------------ island 0x00000003 claimed ------------^^^
+{17:39:22} FindBestIsland:Zero Sense:all:Hyades Sector DM-T b4-1:Hyades Sector DM-T b4-1
+None found - create new 0x0000050aeaaed3b6(+) (wake=0x0000050aeaaed3b7)
+
+{17:39:22} IJoinSession:Island: 0x0000050aeaaed3b6: 95.90.230.28:55677 x 89 (192.168.1.107:59949) Name Unknown
+{17:39:22} IJoinSession:Wake: 0x0000050aeaaed3b7: 95.90.230.28:55677 x 90 (192.168.1.107:59949) Name Unknown
+{17:39:22} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.26&Duration=2.07
+{17:39:22} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.03&Duration=2.32
+{17:39:22} Waiting for Authority Stability on 0 objects
+{17:39:22} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=2.35&Duration=0.00
+{17:39:22} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=2.35&Duration=0.22
+{17:39:32} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=12.62
+{17:40:05} machines=4&numturnlinks=0&backlogtotal=0&backlogmax=0&avgsrtt=425&loss=0.000&&jit=0.000&act1=39.460&act2=0.130
+{17:40:42} ILeftSession(3): 0x0000050aeaaed3b6: 95.90.230.28:55677 x 142 (192.168.1.107:59949) Name Unknown
+{17:40:43} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.06
+{17:40:43} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e3137302e3138302e3736</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{17:40:43} EnterLocation: Using UDP server address 54.170.180.76:19364 from webserver
+{17:40:43} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=0.20
+{17:40:43} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.22&Duration=0.00
+{17:40:43} System:20(Koria) Body:1 Pos:(1.56424e+010,3.37104e+009,1.30301e+010) cruising
+{17:40:43} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.25&Duration=0.17
+{17:40:43} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.59
+{17:40:45} vvv------------ ISLAND 0x00000004 CLAIMED ------------vvv
+{17:40:45} ^^^------------ island 0x00000004 claimed ------------^^^
+{17:40:45} FindBestIsland:Zero Sense:all:Koria ABC:Koria
+None found - create new 0x0000050aeaaed60e(+) (wake=0x0000050aeaaed60f)
+
+{17:40:45} IJoinSession:Island: 0x0000050aeaaed60e: 95.90.230.28:55677 x 94 (192.168.1.107:59949) Name Unknown
+{17:40:45} IJoinSession:Wake: 0x0000050aeaaed60f: 95.90.230.28:55677 x 95 (192.168.1.107:59949) Name Unknown
+{17:40:45} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.25&Duration=1.82
+{17:40:45} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.08&Duration=2.01
+{17:40:45} Waiting for Authority Stability on 2 objects
+{17:40:45} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=2.09&Duration=0.00
+{17:40:46} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=2.09&Duration=0.98
+{17:40:56} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=12.69
+{17:43:25} ILeftSession(3): 0x0000050aeaa19859: 95.90.230.28:55677 x 228 (192.168.1.107:59949) Name Unknown
+{17:43:41} 2 machines overdue: 
+{17:44:22} ILeftSession(3): 0x0000050aeaaed22c: 95.90.230.28:55677 x 225 (192.168.1.107:59949) Name Unknown
+{17:45:39} 2 machines overdue: 
+{17:45:45} ILeftSession(3): 0x0000050aeaaed3b7: 95.90.230.28:55677 x 220 (192.168.1.107:59949) Name Unknown
+{17:46:06} ILeftSession(3): 0x0000050aeaaed60e: 95.90.230.28:55677 x 234 (192.168.1.107:59949) Name Unknown
+{17:46:07} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.00&Duration=0.02
+{17:46:07} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.02
+{17:46:07} System:20(Koria) Body:34 Pos:(-13639.5,-14951.5,-7762.21) 
+{17:46:07} vvv------------ ISLAND 0x00000003 CLAIMED ------------vvv
+{17:46:07} ^^^------------ island 0x00000003 claimed ------------^^^
+{17:46:07} FindBestIsland:Zero Sense:all:Liouville Prospect:Koria
+None found - create new 0x0000050aeb76a008(-) (wake=0x0000050aeb76a009)
+
+{17:46:07} IJoinSession:Island: 0x0000050aeb76a008: 95.90.230.28:55677 x 91 (192.168.1.107:59949) Name Unknown
+{17:46:07} IJoinSession:Wake: 0x0000050aeb76a009: 95.90.230.28:55677 x 92 (192.168.1.107:59949) Name Unknown
+{17:46:07} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.03&Duration=0.08
+{17:46:07} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.03&Duration=0.10
+{17:46:07} Waiting for Authority Stability on 1 objects
+{17:46:07} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=0.13&Duration=0.00
+{17:46:07} System:20(Koria) Body:34 Pos:(-13325.7,-14058.9,-8093.36) 
+{17:46:07} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.49
+{17:46:07} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=0.13&Duration=0.40
+{17:46:08} ModularStationAttachComponent: object kinematic Outpost_ComsTower_0x0000000100000844 is not ready
+{17:46:08} ModularStationAttachComponent: object kinematic Outpost_ComsTower_0x0000000100000844 is not ready
+{17:46:08} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.03&Duration=1.13
+{17:46:09} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=2.25
+{17:46:09} System:20(Koria) Body:34 Pos:(-13625.2,-14933.4,-7752.43) 
+{17:46:09} System:20(Koria) Body:34 Pos:(-11568,-12660,-6479.08) 
+{17:46:09} System:20(Koria) Body:34 Pos:(-9587.83,-10471.7,-5253.43) 
+{17:46:09} System:20(Koria) Body:34 Pos:(-7658.12,-8339.26,-4059) 
+{17:46:15} System:20(Koria) Body:34 Pos:(-5795.72,-6278.65,-2912.13) 
+{17:46:21} Dock Permission Received on pad 2
+{17:46:22} We (Asp_0x0000050ae98a7bf5) own pad 2 but it's state disagrees, remind it
+{17:46:26} System:20(Koria) Body:34 Pos:(-3937.99,-4202.34,-1789.29) 
+{17:46:37} System:20(Koria) Body:34 Pos:(-2274.45,-2170.87,-332.971) 
+{17:46:56} System:20(Koria) Body:34 Pos:(-419.129,8.043,569.018) 
+{17:47:11} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{17:47:23} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{17:47:26} System:20(Koria) Body:34 Pos:(122.158,-342.261,370.036) 
+{17:48:11} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{17:48:31} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id>497747</commander_id><name>4d617276696e20426967204e757473</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Farack</lastLocation><presence>auto</presence><solo>0</solo><privateGroup_id>0</privateGroup_id><lastSystemAddr>3932143293138</lastSystemAddr><canAccept>0</canAccept><ignored>0</ignored><state>open</state><actions><inviteToWing>1</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{17:49:24} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{17:50:05} machines=4&numturnlinks=0&backlogtotal=0&backlogmax=0&avgsrtt=408&loss=0.000&&jit=0.000&act1=42.879&act2=0.106
+{17:50:12} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{17:51:07} ILeftSession(3): 0x0000050aeaaed60f: 95.90.230.28:55677 x 136 (192.168.1.107:59949) Name Unknown
+{17:51:12} Dock Permission Received on pad 0
+{17:51:12} CobraMkIII_0x0000050ae98a7e11 Attempting to spawn docked but pad not in correct state, poking it
+{17:51:14} CobraMkIII_0x0000050ae98a7e11 Attempting to spawn docked but pad not in correct state, poking it
+{17:51:16} CobraMkIII_0x0000050ae98a7e11 Attempting to spawn docked but pad not in correct state, poking it
+{17:51:18} CobraMkIII_0x0000050ae98a7e11 Attempting to spawn docked but pad not in correct state, poking it
+{17:51:20} CobraMkIII_0x0000050ae98a7e11 Attempting to spawn docked but pad not in correct state, poking it
+{17:51:22} CobraMkIII_0x0000050ae98a7e11 Attempting to spawn docked but pad not in correct state, poking it
+{17:51:23} We (CobraMkIII_0x0000050ae98a7e11) own pad 0 but it's state disagrees, remind it
+{17:51:24} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{17:51:25} Dock Permission Received on pad 1
+{17:51:26} We (Adder_0x0000050ae98a7df3) own pad 1 but it's state disagrees, remind it
+{17:52:23} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{17:52:25} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{17:53:20} Ship Adder_0x0000050ae98a7df3 clearing docking state
+{17:53:23} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{17:53:25} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{17:53:28} Ship CobraMkIII_0x0000050ae98a7e11 clearing docking state
+{17:54:23} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{17:54:25} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{17:55:45} Ship Asp_0x0000050ae98a7bf5 clearing docking state
+{17:55:51} System:20(Koria) Body:34 Pos:(1116.01,1445.17,2567.46) 
+{17:55:59} System:20(Koria) Body:34 Pos:(2441.35,3156.48,4652.81) 
+{17:56:07} System:20(Koria) Body:34 Pos:(3765.1,4875.87,6732.54) 
+{17:56:08} System:20(Koria) Body:34 Pos:(3836.97,4965.44,6833.11) 
+{17:56:13} Dock Permission Received on pad 1
+{17:56:14} We (CobraMkIII_0x0000050ae98a7e6d) own pad 1 but it's state disagrees, remind it
+{17:56:17} System:20(Koria) Body:34 Pos:(5360.91,6775.81,8677.3) 
+{17:56:24} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_2 requested:1
+{17:56:26} Server resource allocation failed, group:00000000c0639e00 subgroup:AmbientTraffic_1 requested:1
+{17:56:28} ILeftSession(3): 0x0000050aeb76a008: 95.90.230.28:55677 x 158 (192.168.1.107:59949) Name Unknown
+{17:56:28} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.06
+{17:56:28} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.06
+{17:56:29} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e3137302e3138302e3736</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{17:56:29} EnterLocation: Using UDP server address 54.170.180.76:19364 from webserver
+{17:56:29} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=0.08
+{17:56:29} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.26&Duration=0.00
+{17:56:29} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.27&Duration=0.00
+{17:56:29} System:1(Hyades Sector DM-T b4-1) Body:7 Pos:(1.5265e+010,6.2098e+007,2.96396e+009) cruising
+{17:56:30} vvv------------ ISLAND 0x00000004 CLAIMED ------------vvv
+{17:56:30} ^^^------------ island 0x00000004 claimed ------------^^^
+{17:56:30} FindBestIsland:Zero Sense:all:Hyades Sector DM-T b4-1:Hyades Sector DM-T b4-1
+None found - create new 0x0000050aeb7b763f(+) (wake=0x0000050aeb7b7640)
+
+{17:56:30} IJoinSession:Island: 0x0000050aeb7b763f: 95.90.230.28:55677 x 100 (192.168.1.107:59949) Name Unknown
+{17:56:30} IJoinSession:Wake: 0x0000050aeb7b7640: 95.90.230.28:55677 x 101 (192.168.1.107:59949) Name Unknown
+{17:56:30} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.27&Duration=1.68
+{17:56:30} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.08&Duration=1.90
+{17:56:30} Waiting for Authority Stability on 0 objects
+{17:56:30} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=1.98&Duration=0.00
+{17:56:31} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=1.98&Duration=0.23
+{17:56:41} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=12.70
+{17:57:29} ILeftSession(3): 0x0000050aeb7b763f: 95.90.230.28:55677 x 149 (192.168.1.107:59949) Name Unknown
+{17:57:29} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.02
+{17:57:29} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.10
+{17:57:29} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e3137302e3138302e3736</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{17:57:29} EnterLocation: Using UDP server address 54.170.180.76:19364 from webserver
+{17:57:29} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=0.17
+{17:57:29} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.19&Duration=0.00
+{17:57:30} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.21&Duration=0.00
+{17:57:30} System:3(Lyncis Sector OC-V b2-3) Body:2 Pos:(-6.44123e+009,9.80751e+009,-1.00946e+010) cruising
+{17:57:32} vvv------------ ISLAND 0x00000002 CLAIMED ------------vvv
+{17:57:32} ^^^------------ island 0x00000002 claimed ------------^^^
+{17:57:32} FindBestIsland:Zero Sense:all:Lyncis Sector OC-V b2-3 ABC:Lyncis Sector OC-V b2-3
+None found - create new 0x0000050aeb7b784a(+) (wake=0x0000050aeb7b784b)
+
+{17:57:32} IJoinSession:Island: 0x0000050aeb7b784a: 95.90.230.28:55677 x 101 (192.168.1.107:59949) Name Unknown
+{17:57:32} IJoinSession:Wake: 0x0000050aeb7b784b: 95.90.230.28:55677 x 102 (192.168.1.107:59949) Name Unknown
+{17:57:32} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.21&Duration=2.37
+{17:57:32} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.03&Duration=2.57
+{17:57:32} Waiting for Authority Stability on 0 objects
+{17:57:32} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=2.60&Duration=0.00
+{17:57:32} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=2.60&Duration=0.23
+{17:57:42} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=12.69
+{17:58:22} ILeftSession(3): 0x0000050aeb7b784a: 95.90.230.28:55677 x 120 (192.168.1.107:59949) Name Unknown
+{17:58:23} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.06
+{17:58:23} EnterLocation: response
+<?xml version="1.0" encoding="utf-8"?>
+<data><servers><server><ip>35342e3137302e3138302e3736</ip><port>19364</port></server></servers><rescueservers></rescueservers></data>
+{17:58:23} EnterLocation: Using UDP server address 54.170.180.76:19364 from webserver
+{17:58:23} EnterLocation: Activity=EstablishServers&note=complete&Start=0.00&Duration=0.20
+{17:58:23} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.22&Duration=0.00
+{17:58:23} System:89(Nganji) Body:1 Pos:(6.93843e+009,1.43282e+010,-8.52595e+008) cruising
+{17:58:23} vvv------------ ISLAND 0x00000001 CLAIMED ------------vvv
+{17:58:23} ^^^------------ island 0x00000001 claimed ------------^^^
+{17:58:23} FindBestIsland:Zero Sense:all:Nganji AB:Nganji
+None found - create new 0x0000050aeb7b79eb(+) (wake=0x0000050aeb7b79ec)
+
+{17:58:23} IJoinSession:Island: 0x0000050aeb7b79eb: 95.90.230.28:55677 x 113 (192.168.1.107:59949) Name Unknown
+{17:58:23} IJoinSession:Wake: 0x0000050aeb7b79ec: 95.90.230.28:55677 x 114 (192.168.1.107:59949) Name Unknown
+{17:58:23} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.26&Duration=0.07
+{17:58:23} Waiting for Authority Stability on 5 objects
+{17:58:23} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=0.36&Duration=0.00
+{17:58:23} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.26&Duration=0.17
+{17:58:23} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.08&Duration=0.65
+{17:58:24} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=1.11
+{17:58:24} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=0.36&Duration=0.80
+{17:58:31} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id>497747</commander_id><name>4d617276696e20426967204e757473</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Farack</lastLocation><presence>auto</presence><solo>0</solo><privateGroup_id>0</privateGroup_id><lastSystemAddr>3932143293138</lastSystemAddr><canAccept>0</canAccept><ignored>0</ignored><state>open</state><actions><inviteToWing>1</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{17:58:36} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=12.86
+{18:00:05} machines=4&numturnlinks=0&backlogtotal=0&backlogmax=0&avgsrtt=295&loss=0.000&&jit=0.027&act1=41.747&act2=0.097
+{18:00:46} 2 machines overdue: 
+{18:01:30} ILeftSession(3): 0x0000050aeb76a009: 95.90.230.28:55677 x 260 (192.168.1.107:59949) Name Unknown
+{18:01:31} ILeftSession(3): 0x0000050aeb7b79eb: 95.90.230.28:55677 x 274 (192.168.1.107:59949) Name Unknown
+{18:01:32} EnterLocation: Activity=WaitForEDServer&note=complete&Start=0.00&Duration=0.02
+{18:01:32} EnterLocation: Activity=PreviousLocationShutdown&note=complete&Start=0.00&Duration=0.02
+{18:01:32} System:89(Nganji) Body:78 Pos:(20256.9,4709.92,-3720.41) 
+{18:01:32} EnterLocation: Activity=DestinationLocationFailure&note=complete&Start=0.00&Duration=0.06
+{18:01:32} vvv------------ ISLAND 0x00000003 CLAIMED ------------vvv
+{18:01:32} ^^^------------ island 0x00000003 claimed ------------^^^
+{18:01:32} FindBestIsland:Zero Sense:all:Christian Dock:Nganji
+None found - create new 0x0000050aeb7b7fa7(-) (wake=0x0000050aeb7b7fa8)
+
+{18:01:32} IJoinSession:Island: 0x0000050aeb7b7fa7: 95.90.230.28:55677 x 149 (192.168.1.107:59949) Name Unknown
+{18:01:32} IJoinSession:Wake: 0x0000050aeb7b7fa8: 95.90.230.28:55677 x 150 (192.168.1.107:59949) Name Unknown
+{18:01:32} EnterLocation: Activity=CreatePointOfFocus&note=complete&Start=0.03&Duration=0.09
+{18:01:32} EnterLocation: Activity=UpdateSkyBox&note=complete&Start=0.03&Duration=0.10
+{18:01:32} Waiting for Authority Stability on 1 objects
+{18:01:32} EnterLocation: Activity=WaitForRemoteMachines&note=complete&Start=0.13&Duration=0.00
+{18:01:32} System:89(Nganji) Body:78 Pos:(19900.4,5151.4,-4259.2) 
+{18:01:32} EnterLocation: Activity=CreatePlayerShip&note=complete&Start=0.13&Duration=0.23
+{18:01:33} EnterLocation: Activity=CreateLocationObjects&note=complete&Start=0.03&Duration=1.79
+{18:01:35} EnterLocation: Activity=EnterLocationFinalStep&note=aborted&Start=0.00&Duration=2.92
+{18:01:35} System:89(Nganji) Body:78 Pos:(20233.5,4702.8,-3715.19) 
+{18:01:35} 2 machines overdue: 
+{18:01:35} System:89(Nganji) Body:78 Pos:(16676.7,3868.74,-2958.99) 
+{18:01:35} System:89(Nganji) Body:78 Pos:(13479,3118.88,-2279.15) 
+{18:01:35} System:89(Nganji) Body:78 Pos:(10507.8,2422.14,-1647.45) 
+{18:01:46} System:89(Nganji) Body:78 Pos:(7574.89,1910.29,-1260.29) 
+{18:01:50} Dock Permission Received on pad 14
+{18:01:51} We (Asp_0x0000050ae98c7150) own pad 14 but it's state disagrees, remind it
+{18:01:57} System:89(Nganji) Body:78 Pos:(4630.96,1638.26,-1791.45) 
+{18:01:59} Dock Permission Received on pad 15
+{18:01:59} CobraMkIII_0x0000050ae98c7233 Attempting to spawn docked but pad not in correct state, poking it
+{18:02:00} CobraMkIII_0x0000050ae98c7233 Attempting to spawn docked but pad not in correct state, poking it
+{18:02:02} CobraMkIII_0x0000050ae98c7233 Attempting to spawn docked but pad not in correct state, poking it
+{18:02:04} CobraMkIII_0x0000050ae98c7233 Attempting to spawn docked but pad not in correct state, poking it
+{18:02:05} CobraMkIII_0x0000050ae98c7233 Attempting to spawn docked but pad not in correct state, poking it
+{18:02:07} CobraMkIII_0x0000050ae98c7233 Attempting to spawn docked but pad not in correct state, poking it
+{18:02:08} System:89(Nganji) Body:78 Pos:(1647.94,1646.38,-2120.45) 
+{18:02:08} We (CobraMkIII_0x0000050ae98c7233) own pad 15 but it's state disagrees, remind it
+{18:02:20} System:89(Nganji) Body:78 Pos:(-1301.38,1968.32,-1663.95) 
+{18:02:32} ILeftSession(3): 0x0000050aeb7b7640: 95.90.230.28:55677 x 247 (192.168.1.107:59949) Name Unknown
+{18:02:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:02:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:02:36} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:02:49} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:02:50} Dock Permission Received on pad 42
+{18:02:51} We (SideWinder_0x0000050ae98c721c) own pad 42 but it's state disagrees, remind it
+{18:02:57} System:89(Nganji) Body:78 Pos:(-32.5567,-239.012,-76.2479) 
+{18:03:07} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_1 requested:1
+{18:03:16} Ship CobraMkIII_0x0000050ae98c7233 clearing docking state
+{18:03:23} ILeftSession(3): 0x0000050aeb7b784b: 95.90.230.28:55677 x 244 (192.168.1.107:59949) Name Unknown
+{18:03:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:03:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:03:50} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:04:08} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_1 requested:1
+{18:04:25} Dock Permission Received on pad 20
+{18:04:26} We (CobraMkIII_0x0000050ae98c7252) own pad 20 but it's state disagrees, remind it
+{18:04:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:04:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:04:37} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:04:50} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:05:08} Dock Permission Received on pad 35
+{18:05:08} Viper_0x0000050ae98c7273 Attempting to spawn docked but pad not in correct state, poking it
+{18:05:10} Viper_0x0000050ae98c7273 Attempting to spawn docked but pad not in correct state, poking it
+{18:05:11} Viper_0x0000050ae98c7273 Attempting to spawn docked but pad not in correct state, poking it
+{18:05:13} Viper_0x0000050ae98c7273 Attempting to spawn docked but pad not in correct state, poking it
+{18:05:15} Viper_0x0000050ae98c7273 Attempting to spawn docked but pad not in correct state, poking it
+{18:05:16} Viper_0x0000050ae98c7273 Attempting to spawn docked but pad not in correct state, poking it
+{18:05:17} We (Viper_0x0000050ae98c7273) own pad 35 but it's state disagrees, remind it
+{18:05:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:05:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:05:37} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:05:45} Ship SideWinder_0x0000050ae98c721c clearing docking state
+{18:05:50} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:06:17} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_1 requested:1
+{18:06:32} ILeftSession(3): 0x0000050aeb7b79ec: 95.90.230.28:55677 x 252 (192.168.1.107:59949) Name Unknown
+{18:06:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:06:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:06:37} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:06:50} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:07:17} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_1 requested:1
+{18:07:19} Ship Viper_0x0000050ae98c7273 clearing docking state
+{18:07:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:07:36} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:07:37} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:08:17} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_1 requested:1
+{18:08:18} 2 machines overdue: 
+{18:08:31} FriendsRequest:
+<?xml version="1.0" encoding="utf-8"?>
+<data><users><item><user_id>190080</user_id><commander_id></commander_id><name>4d696368616c20446f6c796e69756b</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>314355</user_id><commander_id>497747</commander_id><name>4d617276696e20426967204e757473</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Farack</lastLocation><presence>auto</presence><solo>0</solo><privateGroup_id>0</privateGroup_id><lastSystemAddr>3932143293138</lastSystemAddr><canAccept>0</canAccept><ignored>0</ignored><state>open</state><actions><inviteToWing>1</inviteToWing></actions></item><item><user_id>345651</user_id><commander_id></commander_id><name>536c697070657279204a2e2044656772697a</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>415700</user_id><commander_id></commander_id><name>6563686f3432</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>428033</user_id><commander_id></commander_id><name>4d616368696e653437</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item><item><user_id>442380</user_id><commander_id></commander_id><name>53656c656e746963</name><isDocked>0</isDocked><pending>0</pending><lastLocation>Offline</lastLocation><presence>offline</presence><solo></solo><privateGroup_id></privateGroup_id><canAccept>0</canAccept><ignored>0</ignored><state>offline</state><actions><inviteToWing>0</inviteToWing></actions></item></users></data>
+{18:08:34} Ship CobraMkIII_0x0000050ae98c7252 clearing docking state
+{18:08:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:08:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:08:38} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:08:51} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:09:02} Dock Permission Received on pad 15
+{18:09:03} We (Hauler_0x0000050ae98c728c) own pad 15 but it's state disagrees, remind it
+{18:09:17} Dock Permission Received on pad 41
+{18:09:17} Eagle_0x0000050ae98c72a7 Attempting to spawn docked but pad not in correct state, poking it
+{18:09:19} Eagle_0x0000050ae98c72a7 Attempting to spawn docked but pad not in correct state, poking it
+{18:09:21} Eagle_0x0000050ae98c72a7 Attempting to spawn docked but pad not in correct state, poking it
+{18:09:22} Eagle_0x0000050ae98c72a7 Attempting to spawn docked but pad not in correct state, poking it
+{18:09:24} Eagle_0x0000050ae98c72a7 Attempting to spawn docked but pad not in correct state, poking it
+{18:09:26} Eagle_0x0000050ae98c72a7 Attempting to spawn docked but pad not in correct state, poking it
+{18:09:27} We (Eagle_0x0000050ae98c72a7) own pad 41 but it's state disagrees, remind it
+{18:09:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:09:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:09:38} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:09:52} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:10:05} machines=4&numturnlinks=0&backlogtotal=0&backlogmax=0&avgsrtt=354&loss=0.000&&jit=0.000&act1=36.807&act2=0.113
+{18:10:26} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_1 requested:1
+{18:10:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:10:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:10:52} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:10:53} Ship Eagle_0x0000050ae98c72a7 clearing docking state
+{18:11:15} SCREENSHOT: Saved \ED_Pictures\Screenshot_0004.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{18:11:26} Dock Permission Received on pad 41
+{18:11:26} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_1 requested:1
+{18:11:27} We (CobraMkIII_0x0000050ae98c72c2) own pad 41 but it's state disagrees, remind it
+{18:11:29} SCREENSHOT: Saved \ED_Pictures\Screenshot_0004.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{18:11:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:11:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:11:39} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:11:52} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:11:59} SCREENSHOT: Saved \ED_Pictures\Screenshot_0004.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{18:12:19} SCREENSHOT: Saved \ED_Pictures\Screenshot_0004.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{18:12:27} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_1 requested:1
+{18:12:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:12:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:12:39} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:12:41} SCREENSHOT: Saved \ED_Pictures\Screenshot_0004.bmp , w:1680, h:1050, pitch:6784, sourceFormat:B8G8R8A8un_In8
+{18:12:52} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:12:56} Ship Hauler_0x0000050ae98c728c clearing docking state
+{18:13:27} Dock Permission Received on pad 28
+{18:13:27} Eagle_0x0000050ae98c72d8 Attempting to spawn docked but pad not in correct state, poking it
+{18:13:29} Eagle_0x0000050ae98c72d8 Attempting to spawn docked but pad not in correct state, poking it
+{18:13:31} Eagle_0x0000050ae98c72d8 Attempting to spawn docked but pad not in correct state, poking it
+{18:13:32} Eagle_0x0000050ae98c72d8 Attempting to spawn docked but pad not in correct state, poking it
+{18:13:34} Eagle_0x0000050ae98c72d8 Attempting to spawn docked but pad not in correct state, poking it
+{18:13:36} Eagle_0x0000050ae98c72d8 Attempting to spawn docked but pad not in correct state, poking it
+{18:13:37} We (Eagle_0x0000050ae98c72d8) own pad 28 but it's state disagrees, remind it
+{18:13:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_0 requested:1
+{18:13:37} Server resource allocation failed, group:00000000c0626400 subgroup:PatrolTraffic_2 requested:1
+{18:13:39} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_3 requested:1
+{18:13:52} Server resource allocation failed, group:00000000c0626400 subgroup:AmbientTraffic_2 requested:1
+{18:14:07} Ship CobraMkIII_0x0000050ae98c72c2 clearing docking state
+{18:14:27} ILeftSession(3): 0x0000050ae98a7406: 95.90.230.28:55677 x 251 (192.168.1.107:59949) Name Unknown
+{18:14:27}  LeftSession(6): 0x0000050ae98a7406: 86.139.93.145:58789 x 14 Name Unknown
+{18:14:27} 2 machines overdue: 
+{18:14:27} TalkChannelManager::CloseOutgoingChannelTo for UserID 314355
+{18:14:27} ILeftSession(3): 0x000000024bd4cbf3: 95.90.230.28:55677 x 250 (192.168.1.107:59949) Name Unknown
+{18:14:27}  LeftSession(6): 0x000000024bd4cbf3: 86.139.93.145:58789 x 15 Name Unknown
+{18:14:27} TalkChannelManager[314355]: Listening->StopListenSent (SUCCESS: Sent a request to stop listening via talk channel)
+{18:14:27}  LeftSession(3): 0x000000024bd64d98: 86.139.93.145:58789 x 10 Name Unknown
+{18:14:27} TalkChannelManager[314355]: StopListenSent->Idle (SUCCESS: User is no longer listening)
+{18:14:27} TalkChannelManager[314355]: erased
+{18:14:27} ILeftSession(3): 0x0000050aeb7b7fa7: 95.90.230.28:55677 x 247 (192.168.1.107:59949) Name Unknown
+{18:14:27} ILeftSession(3): 0x0000050aeb7b7fa8: 95.90.230.28:55677 x 245 (192.168.1.107:59949) Name Unknown
+{18:14:28} ILeftSession(3): 0x0000050ae98a7002: 95.90.230.28:55677 x 81 (192.168.1.107:59949) Name Unknown
+{18:14:31} CANCEL:176.34.95.127:19364 x 6 EDServer#417|StartServerAdmin(authenticated) (rescue)|
+{18:14:31} ILeftSession(3): 0x0000050ac4657abe: 95.90.230.28:55677 x 4 (192.168.1.107:59949) Name Unknown
+{18:14:31}  LeftSession(6): 0x0000050ac4657abe: 176.34.95.127:19364 x 7 EDServer#417
+{18:14:31} ILeftSession(3): 0x0000050aeaa19853: 95.90.230.28:55677 x 3 (192.168.1.107:59949) Name Unknown
+{18:14:31}  LeftSession(6): 0x0000050aeaa19853: 54.170.180.76:19364 x 9 EDServer#399
+{18:14:34} ILeftSession(3): 0x000000024bd64d98: 95.90.230.28:55677 x 3 (192.168.1.107:59949) Name Unknown
+{18:14:34} Machine 95.90.230.28:55677 x 2 (192.168.1.107:59949) Name Unknown disconnected: shutdown
+{18:14:34} Machine 86.139.93.145:58789 x 4 Name Unknown disconnected: shutdown
+{18:14:34} Machine 176.34.95.127:19364 x 6 EDServer#417 disconnected: shutdown
+{18:14:34} Machine 92.210.160.170:60327 x 4 Name Unknown disconnected: shutdown
+{18:14:34} Machine 54.170.180.76:19364 x 7 EDServer#399 disconnected: shutdown
+{18:14:34} Machine going:0.0.0.0:0 x 0 DummyMachine srtt=1000
+{18:14:34} Machine going:95.90.230.28:55677 x 0 Name Unknown srtt=1000
+{18:14:34} Machine going:86.139.93.145:58789 x 0 Name Unknown srtt=507
+{18:14:34} Machine going:71.186.195.176:15412 x 0 Name Unknown srtt=1000
+{18:14:34} Machine going:176.34.95.127:19364 x 0 EDServer#417 srtt=64
+{18:14:34} Machine going:92.210.160.170:60327 x 0 Name Unknown srtt=698
+{18:14:34} Machine going:83.125.122.165:60769 x 0 Name Unknown srtt=1000
+{18:14:34} Machine going:54.170.180.76:19364 x 0 EDServer#399 srtt=230
+{18:14:34} Turn State: Deallocating
+{18:14:34} TURN Relay shutting down..
+{18:51:11} System:20(Alpha C) Body:34 Pos:(-912.113,387.702,-133.182) 
+{00:51:11} System:20(Beta A) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta B) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta C) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta D) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta E) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta F) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta G) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta H) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta I) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta J) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta K) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta L) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta M) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta N) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta O) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta P) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta Q) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta R) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta S) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta M) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta A) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta B) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta A) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta B) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta A) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta B) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta A) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta B) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta A) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta B) Body:34 Pos:(-912.113,387.702,-133.182)
+{01:51:11} System:20(Beta C) Body:34 Pos:(-912.113,387.702,-133.182)
