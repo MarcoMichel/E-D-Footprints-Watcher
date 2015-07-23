@@ -201,6 +201,7 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 			startRegistration();
 		} else {
 			checkServerStatus();
+			log.info("Server is online. Start collecting footprints.");
 			watchDirectoryPath(config.getProperty(DIRECTORY_TO_WATCH));
 		}
 	}
