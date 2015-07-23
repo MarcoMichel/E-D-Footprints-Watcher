@@ -17,9 +17,13 @@ import net.marcomichel.ed.parser.IParser;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.json.simple.JSONObject;
 
 /**
@@ -60,6 +64,21 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
     	Reader reader = new FileReader(propertyFile);
     	config = new Properties();
     	config.load(reader);
+	}
+
+	private int sendGet(String url) throws IOException {
+		log.fine("Sending Query to " + url);
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+		HttpGet httpGet = new HttpGet(url);
+		CloseableHttpResponse response = httpClient.execute(httpGet);
+		int statusCode = -1;
+		try {
+	        statusCode = response.getStatusLine().getStatusCode();
+	        log.finer("Response is " + statusCode);			
+		} finally {
+			response.close();
+		}
+		return statusCode;
 	}
 	
 	/**
@@ -164,13 +183,24 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 		FileWriter writer = new FileWriter(configFile);
 		config.store(writer, "Config of Watcher.");			
 	}
+	
+	private void checkServerStatus() throws IOException {
+		int status = sendGet(config.getProperty(SERVER_URL) + "/ping");
+		if (status != 200) {
+			log.log(Level.SEVERE, "Server is not ready. Status Code " + status);
+			throw new IOException("Server not ready. Status code " + status);
+		}
+	}
+	
 	/**
 	 * Startet die Überwachung 
+	 * @throws IOException 
 	 */
-	public void watch() {
+	public void watch() throws IOException {
 		if (config.getProperty(CMDR_ID, null) == null) {
 			startRegistration();
 		} else {
+			checkServerStatus();
 			watchDirectoryPath(config.getProperty(DIRECTORY_TO_WATCH));
 		}
 	}
