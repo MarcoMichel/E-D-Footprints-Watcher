@@ -11,6 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
+import net.marcomichel.ed.parser.GameConfigParser;
 import net.marcomichel.ed.parser.GameLogFileParser;
 import net.marcomichel.ed.parser.IJumpToCallBack;
 import net.marcomichel.ed.parser.IParser;
@@ -40,6 +41,7 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 	private static final Logger log = Logger.getLogger(Watcher.class.getName());
 
 	// Keys für das Property File mit der Config
+	private static final String GAME_CONFIG         = "gameconfig";
     private static final String DIRECTORY_TO_WATCH 	= "directory";
     private static final String SERVER_URL			= "url";
     private static final String CMDR_NAME			="cmdr";    
@@ -185,10 +187,20 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 	}
 	
 	private void checkServerStatus() throws IOException {
+		log.fine("Checking server status.");
 		int status = sendGet(config.getProperty(SERVER_URL) + "/ping");
 		if (status != 200) {
 			log.log(Level.SEVERE, "Server is not ready. Status Code " + status);
 			throw new IOException("Server not ready. Status code " + status);
+		}
+	}
+	
+	private void checkVerboseLogging() throws IOException {
+		log.fine("Checking verbose logging.");
+		GameConfigParser parser = new GameConfigParser(config.getProperty(GAME_CONFIG));
+		boolean verbose = parser.isVerboseLogging();
+		if (!verbose) {
+			log.warning("Logging of Elite Dangerous is not verbose. Cannot detect any jumps. Please set logging to verbose.");
 		}
 	}
 	
@@ -197,10 +209,11 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 	 * @throws IOException 
 	 */
 	public void watch() throws IOException {
+		checkServerStatus();
 		if (config.getProperty(CMDR_ID, null) == null) {
 			startRegistration();
 		} else {
-			checkServerStatus();
+			checkVerboseLogging();
 			log.info("Server is online. Start collecting footprints.");
 			watchDirectoryPath(config.getProperty(DIRECTORY_TO_WATCH));
 		}
