@@ -19,10 +19,10 @@ import java.util.logging.Logger;
 
 /**
  * Abstrakte Klasse um Verzeichnisse auf Veränderugnen zu überwachen.<p>
- * 
+ *
  * Bei Create und Modify Events wird die Methode onModFile aufgerufen, die von abgeleiteten Klassen
  * implementiert werden muss.
- * 
+ *
  * @author Marco Michel
  *
  */
@@ -33,7 +33,7 @@ public abstract class DirectoryWatcher {
 
 	/**
 	 * Startet die Überwachung eines angegebenen Verzeichnisses.
-	 * 
+	 *
 	 * @param dir der Pfad des Verzeichnisses, das überwacht werden soll
 	 */
 	protected void watchDirectoryPath(String dir) {
@@ -92,13 +92,13 @@ public abstract class DirectoryWatcher {
 		} catch (IOException ioe) {
 			log.log(Level.SEVERE, "Error watching path", ioe);
 		} catch (InterruptedException ie) {
-			log.log(Level.SEVERE, "Error watching path", ie);
+			log.log(Level.SEVERE, "Directory-Watching has been interrupted", ie);
 		}
 	}
 
 	/**
 	 * Methode wird aufgerufen, wenn sich in einem Verzeichnis etwas verändert hat.
-	 * 
+	 *
 	 * @param file Das File, das sich geändert hat
 	 */
 	protected abstract void onModFile(String file);
