@@ -1,9 +1,13 @@
 package net.marcomichel.ed.watcher.fx.view;
 
+import java.io.File;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.TextField;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import net.marcomichel.ed.watcher.fx.model.Settings;
 
@@ -62,6 +66,35 @@ public class SettingsEditDialogController {
         return okClicked;
     }
 
+    @FXML
+    private void handleDirectoryChooser() {
+    	final DirectoryChooser chooser = new DirectoryChooser();
+    	chooser.setTitle("Select Directory to watch");
+    	File defaultDirectory = new File(directoryToWatchField.getText());
+    	if (defaultDirectory.exists()) {
+        	chooser.setInitialDirectory(defaultDirectory);
+    	}
+    	File selectedDirectory = chooser.showDialog(dialogStage);
+    	if (selectedDirectory != null) {
+    		directoryToWatchField.setText(selectedDirectory.getAbsolutePath().replace("\\", "/"));
+    	}
+    }
+
+    @FXML
+    private void handleGameConfigChooser() {
+        final FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select game config file");
+        final String dir = gameConfigField.getText().substring(0, gameConfigField.getText().lastIndexOf("/"));
+    	File defaultDirectory = new File(dir);
+    	if (defaultDirectory.exists()) {
+    		fileChooser.setInitialDirectory(defaultDirectory);
+    	}
+    	File file = fileChooser.showOpenDialog(dialogStage);
+        if (file != null) {
+            gameConfigField.setText(file.getAbsolutePath().replace("\\", "/"));
+        }
+    }
+
     /**
      * Called when the user clicks ok.
      */
@@ -103,10 +136,20 @@ public class SettingsEditDialogController {
 
         if (directoryToWatchField.getText() == null || directoryToWatchField.getText().length() == 0) {
             errorMessage += "You must set a directory to watch!\n";
+        } else {
+        	File directory = new File(directoryToWatchField.getText());
+        	if (!directory.exists()) {
+        		errorMessage += "Directory to watch does not exists!\n";
+        	}
         }
 
         if (gameConfigField.getText() == null || gameConfigField.getText().length() == 0) {
             errorMessage += "You must set the game config file!\n";
+        } else {
+        	File file = new File(gameConfigField.getText());
+        	if (!file.exists()) {
+        		errorMessage += "Game config file does not exists!\n";
+        	}
         }
 
         if (errorMessage.length() == 0) {

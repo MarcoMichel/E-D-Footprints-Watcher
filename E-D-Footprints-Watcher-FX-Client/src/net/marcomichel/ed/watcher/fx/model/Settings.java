@@ -8,6 +8,11 @@ import net.marcomichel.ed.watcher.Watcher;
 
 public class Settings {
 
+	final static private String USER_HOME 	= System.getProperty("user.home").replace("\\", "/");
+	final static private String GAME_FOLDER = "/AppData/Local/Frontier_Developments/Products/FORC-FDEV-D-1010/";
+	final static private String LOG_FOLDER 	= USER_HOME + GAME_FOLDER + "/Logs";
+	final static private String GAME_CONFIG = USER_HOME + GAME_FOLDER + "/AppConfig.xml";
+
 	private final StringProperty cmdr;
 	private final StringProperty eMail;
 	private final StringProperty directoryToWatch;
@@ -21,8 +26,8 @@ public class Settings {
 	public Settings(Properties config) {
 		this.cmdr = new SimpleStringProperty(config.getProperty(Watcher.CMDR_NAME, ""));
 		this.eMail = new SimpleStringProperty(config.getProperty(Watcher.CMDR_MAIL, ""));
-		this.directoryToWatch = new SimpleStringProperty(config.getProperty(Watcher.DIRECTORY_TO_WATCH, ""));
-		this.gameConfigFile = new SimpleStringProperty(config.getProperty(Watcher.GAME_CONFIG, ""));
+		this.directoryToWatch = new SimpleStringProperty(config.getProperty(Watcher.DIRECTORY_TO_WATCH, LOG_FOLDER));
+		this.gameConfigFile = new SimpleStringProperty(config.getProperty(Watcher.GAME_CONFIG, GAME_CONFIG));
 		this.currentSystem = new SimpleStringProperty("unknown");
 	}
 
