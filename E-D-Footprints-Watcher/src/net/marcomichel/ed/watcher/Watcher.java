@@ -29,11 +29,11 @@ import org.json.simple.JSONObject;
 
 /**
  * Überwachnungsprogramm für Elite Dangerous Footprints.<p>
- * 
+ *
  * Das Programm muss auf dem Rechner laufen, auf dem Eite Dangerous ausgeführt wird.<br>
- * Es überwacht ob ein Sprung in ein anderes System durchgeführt wurde und sendet ein 
+ * Es überwacht ob ein Sprung in ein anderes System durchgeführt wurde und sendet ein
  * entsprechendes Event an den E:D-Footprints Server.
- * 
+ *
  * @author Marco Michel
  */
 public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
@@ -41,33 +41,52 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 	private static final Logger log = Logger.getLogger(Watcher.class.getName());
 
 	// Keys für das Property File mit der Config
-	private static final String GAME_CONFIG         = "gameconfig";
-    private static final String DIRECTORY_TO_WATCH 	= "directory";
-    private static final String SERVER_URL			= "url";
-    private static final String CMDR_NAME			="cmdr";    
-    private static final String CMDR_ID 			="id";    
-    private static final String CMDR_MAIL 			="mail";    
+	public static final String GAME_CONFIG         	= "gameconfig";
+	public static final String DIRECTORY_TO_WATCH	= "directory";
+	public static final String SERVER_URL			= "server-url";
+	public static final String CMDR_NAME			= "cmdr";
+	public static final String CMDR_ID 				= "id";
+	public static final String CMDR_MAIL 			= "mail";
 
     // Config
     private Properties config;
-    private String configFile;
-    // Parser mit dem das Log-File geparst wird 
+    private String userConfigFile;
+    // Parser mit dem das Log-File geparst wird
 	private IParser parser = new GameLogFileParser(this);
+	// Observer über den die GUI informiert wird
+	private IModelObserver modelObserver;
 
 	/**
-	 * Konstruktor, bekommt den Pfad auf das Config-File übergeben.
-	 * 
-	 * @param propertyFile Pfad auf das Config-File
+	 * Konstruktor, bekommt den Pfad auf das Config-File des Users und eine Observer-Instanz übergeben.
+	 *
+	 * @param propertyFile Pfad auf das Config-File des Users
+	 * @param observer Observer über den die GUI informiert wird
 	 * @throws IOException wenn das Config-File nicht eingelesen werden konnte
 	 */
-	public Watcher(String propertyFile) throws IOException {
+	public Watcher(String propertyFile, IModelObserver observer) throws IOException {
+		this.modelObserver = observer;
     	log.info("Reading Property-File " + propertyFile);
-    	configFile = propertyFile;
-    	Reader reader = new FileReader(propertyFile);
+    	userConfigFile = propertyFile;
+    	// Config der Application einlesen
+    	InputStream is = new FileInputStream("config/watcher-application.properties");
     	config = new Properties();
-    	config.load(reader);
+    	config.load(is);
+    	// Config des Users einlesen
+    	try {
+        	Reader reader = new FileReader(propertyFile);
+        	config.load(reader);
+		} catch (IOException e) {
+			log.warning("No user configuration. File not found: " + propertyFile);
+		}
 	}
 
+	/**
+	 * Sendet ein HTTP-GET an den E:D-Footprints Server
+	 *
+	 * @param url URL die aufgerufen werden soll
+	 * @return HTTP Status-Code der Response
+	 * @throws IOException
+	 */
 	private int sendGet(String url) throws IOException {
 		log.fine("Sending Query to " + url);
 		CloseableHttpClient httpClient = HttpClients.createDefault();
@@ -76,25 +95,26 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 		int statusCode = -1;
 		try {
 	        statusCode = response.getStatusLine().getStatusCode();
-	        log.finer("Response is " + statusCode);			
+	        log.finer("Response is " + statusCode);
 		} finally {
 			response.close();
 		}
 		return statusCode;
 	}
-	
+
 	/**
-	 * Sendet ein Event an den E:D-Footprints Server.
-	 * 
+	 * Sendet ein HTTP-POST an den E:D-Footprints Server.
+	 *
 	 * @param json JSON Objekt mit dem Event, das gesendet werden soll
-	 * @throws IOException 
+	 * @param url URL die aufgerufen werden soll
+	 * @throws IOException
 	 */
     private String sendPost(JSONObject json, String url) throws IOException {
     	final String body = json.toJSONString();
     	log.fine("Sending " + body);
     	HttpClient httpClient = new DefaultHttpClient();
     	HttpPost httpPost = new HttpPost(url);
-        
+
 		StringEntity stringEntity = new StringEntity(body);
         httpPost.setEntity(stringEntity);
         httpPost.setHeader("Content-type", "application/json");
@@ -132,13 +152,16 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 		obj.put("from", from);
 		obj.put("id", config.getProperty(CMDR_ID));
 		log.info(obj.toJSONString());
-		
+		modelObserver.onSystemChange(to);
+
 		boolean success = false;
 		int retry = 0;
 		while (!success && retry<3) {
 			try {
 				sendPost(obj, config.getProperty(SERVER_URL) + "/publish");
 				success = true;
+				log.info("Jump event send.");
+				modelObserver.addMessage("Send jump event from " + from + " to " + to);
 			} catch (IOException e) {
 				log.log(Level.SEVERE, "Could not send event to server. " + e.toString(), e);
 				retry++;
@@ -149,14 +172,21 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 					} catch (InterruptedException e1) {
 						log.warning(e1.toString());
 					}
+				} else {
+					log.info("Could not send event. No more retrys for this event.");
+					modelObserver.addMessage("Server problems. Could not send jump event from " + from + " to " + to);
 				}
-			}			
+			}
 		}
 	}
 
+	/**
+	 * Startet den Registrierungs-Prozess.
+	 */
 	@SuppressWarnings("unchecked")
-	private void startRegistration() {
+	public void startRegistration() {
 		log.warning("Commander not registert. Starting registration....");
+		modelObserver.addMessage("Sending registration request....");
 		JSONObject obj = new JSONObject();
 		obj.put("cmdr", config.getProperty(CMDR_NAME));
 		obj.put("mail", config.getProperty(CMDR_MAIL));
@@ -169,69 +199,125 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 			config.put(CMDR_ID, id);
 			log.info("You will receive an e-mail.");
 			log.info("Please restart Watcher after using activation link in e-mail.");
+			modelObserver.addMessage("Registration request successful. You will receive an e-mail. Please use activation link in e-mail to complete registration.");
 		} catch (IOException e) {
 			log.log(Level.SEVERE, "Could not send registration request to server.", e);
+			modelObserver.addMessage("Could not send registration request to server. Please restart Watcher and try again.");
 			return;
 		}
-		
+
 		try {
 			storeConfig();
 		} catch (IOException e) {
 			log.log(Level.SEVERE, "Could not store config with id.", e);
+			modelObserver.addMessage("Could not store config. Registration not complete. Please restart Watcher.");
 		}
 	}
-	
-	private void storeConfig() throws IOException {
-		FileWriter writer = new FileWriter(configFile);
-		config.store(writer, "Config of Watcher.");			
+
+	/**
+	 * Liefert die Konfiguration
+	 */
+	public Properties getConfig() {
+		return config;
 	}
-	
-	private void checkServerStatus() throws IOException {
+
+	/**
+	 * Speichert die Konfiguration
+	 * @throws IOException wenn die Config nicht gespeichert werden konnte
+	 */
+	public void storeConfig() throws IOException {
+		FileWriter writer = new FileWriter(userConfigFile);
+		Properties userConfig = new Properties();
+		userConfig.putAll(config);
+		userConfig.remove(SERVER_URL);
+		userConfig.store(writer, "User-Config of Watcher.");
+	}
+
+	/**
+	 * Prüft, ob de E:D-Footprints Server erreichbar ist.
+	 * @throws ServerNotOnlineException wenn der Server nicht erreichbar ist
+	 */
+	private void checkServerStatus() throws ServerNotOnlineException {
 		log.fine("Checking server status.");
-		int status = sendGet(config.getProperty(SERVER_URL) + "/ping");
-		if (status != 200) {
-			log.log(Level.SEVERE, "Server is not ready. Status Code " + status);
-			throw new IOException("Server not ready. Status code " + status);
+		try {
+			int status = sendGet(config.getProperty(SERVER_URL) + "/ping");
+			if (status != 200) {
+				throw new ServerNotOnlineException("Server not ready. Status code " + status);
+			}
+		} catch (IOException e) {
+			throw new ServerNotOnlineException("Cannot connect to server.", e);
 		}
+		log.info("Server online.");
+		modelObserver.addMessage("Server online.");
 	}
-	
-	private void checkVerboseLogging() throws IOException {
+
+	/**
+	 * Prüft, ob das Verbose Logging in Elite Dangerous aktiv ist
+	 * @throws IOException wenn auf die Config von Elite Dangerous nicht zugegriffen werden kann
+	 * @throws NoVerboseLoggingException wenn das Verbose Logging nicht aktiv ist
+	 */
+	private void checkVerboseLogging() throws IOException, NoVerboseLoggingException {
 		log.fine("Checking verbose logging.");
 		GameConfigParser parser = new GameConfigParser(config.getProperty(GAME_CONFIG));
 		boolean verbose = parser.isVerboseLogging();
 		if (!verbose) {
-			log.warning("Logging of Elite Dangerous is not verbose. Cannot detect any jumps. Please set logging to verbose.");
+			throw new NoVerboseLoggingException("Logging of Elite Dangerous is not verbose. Cannot detect any jumps. Please set logging to verbose.");
 		}
+		log.info("Verbose Logging active.");
+		modelObserver.addMessage("Verbose Logging active.");
 	}
-	
+
 	/**
-	 * Startet die Überwachung 
-	 * @throws IOException 
+	 * Prüft, ob der User registriert ist.
+	 * @throws CmdrNotRegistertException wenn der User nicht registriert ist
 	 */
-	public void watch() throws IOException {
-		checkServerStatus();
+	private void checkRegistration() throws CmdrNotRegistertException {
 		if (config.getProperty(CMDR_ID, null) == null) {
-			startRegistration();
-		} else {
-			checkVerboseLogging();
-			log.info("Server is online. Start collecting footprints.");
-			watchDirectoryPath(config.getProperty(DIRECTORY_TO_WATCH));
+			throw new CmdrNotRegistertException("Commander is not registert.");
 		}
+		log.info("Commander is registert.");
+		modelObserver.addMessage("Commander is registert.");
 	}
-	
+
+	/**
+	 * Startet die Überwachung
+	 * @throws ServerNotOnlineException
+	 * @throws IOException
+	 * @throws NoVerboseLoggingException
+	 * @throws CmdrNotRegistertException
+	 */
+	public void watch() throws ServerNotOnlineException, IOException, NoVerboseLoggingException, CmdrNotRegistertException  {
+		log.info("Checking Prerequisites...");
+		modelObserver.addMessage("Checking Prerequisites...");
+		checkServerStatus();
+		checkRegistration();
+		checkVerboseLogging();
+		log.info("Starting collecting footprints....");
+		modelObserver.addMessage("Starting collecting footprints....");
+		watchDirectoryPath(config.getProperty(DIRECTORY_TO_WATCH));
+	}
+
 	public static void main(String[] args) throws Exception {
 		if (args.length == 0) {
 			System.err.println("Config-File must be provided as first parameter");
 		} else {
 			try {
-				LogManager.getLogManager().readConfiguration(new FileInputStream("watcher-logging.properties"));
+				LogManager.getLogManager().readConfiguration(new FileInputStream("config/watcher-logging.properties"));
 			} catch (IOException exception) {
 				log.log(Level.SEVERE, "Error in loading logging configuration", exception);
 			}
 
 			String file = args[0];
-			Watcher watcher = new Watcher(file);
-			watcher.watch();
+			Watcher watcher = new Watcher(file, new DummyObserver());
+			boolean retry = true;
+			while (retry) {
+				try {
+					watcher.watch();
+				} catch (CmdrNotRegistertException e) {
+					log.info("Commander is not registert.");
+					watcher.startRegistration();
+				}
+			}
 		}
 	}
 
