@@ -92,7 +92,7 @@ public abstract class DirectoryWatcher {
 		} catch (IOException ioe) {
 			log.log(Level.SEVERE, "Error watching path", ioe);
 		} catch (InterruptedException ie) {
-			log.log(Level.SEVERE, "Directory-Watching has been interrupted", ie);
+			log.log(Level.WARNING, "Directory-Watching has been interrupted");
 		}
 	}
 
