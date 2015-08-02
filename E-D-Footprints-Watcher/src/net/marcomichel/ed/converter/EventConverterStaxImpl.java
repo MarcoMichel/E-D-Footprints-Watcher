@@ -27,19 +27,19 @@ public class EventConverterStaxImpl extends CommandersLogParser {
 	@SuppressWarnings("unchecked")
 	@Override
 	protected void onJumpedToEvent(String system, String eventid) {
-		
+
 		if (!systems.contains(system)) {
-			systems.add(system);	
+			systems.add(system);
 			JSONObject obj = new JSONObject();
 			obj.put("id", system);
 			obj.put("label", system);
 			obj.put("discovered", "ZERO SENSE");
 			systemList.add(obj);
 		}
-		
+
 		quelle = ziel;
 		ziel = system;
-		
+
 		Edge edge = new Edge(quelle, ziel);
 		if (!edges.contains(edge)) {
 			edges.add(edge);
@@ -51,8 +51,8 @@ public class EventConverterStaxImpl extends CommandersLogParser {
 			obj.put("style", "line");
 			edgeList.add(obj);
 		}
-	}	
-	
+	}
+
 	private void writeJsonObject(JSONObject json) throws Exception {
 		String jsonAsString = json.toJSONString();
 		Files.write(Paths.get("data.json"), jsonAsString.getBytes());
@@ -63,12 +63,12 @@ public class EventConverterStaxImpl extends CommandersLogParser {
 		log.info("Start parsing...");
 		long ts = System.currentTimeMillis();
 		try {
-			parseLogFile("log.xml");
+			parseLogFile("log1.xml");
 			JSONObject data = new JSONObject();
-			data.put("cmdr", "ZERO SENSE");
+			data.put("name", "ZERO SENSE");
 			data.put("email", "marco-michel@gmx.de");
-			data.put("id", "e0f101fe-506f-4392-9189-2add01010b5a");
-			data.put("team-id", "bb17fe71-5cef-4681-a7c8-c8d006e7b940");
+			data.put("id", "e7884875-e908-32c6-ba43-cb0a10b5eb20");
+			data.put("teamid", "bb17fe71-5cef-4681-a7c8-c8d006e7b940");
 			JSONObject footprint = new JSONObject();
 			footprint.put("nodes", systemList);
 			footprint.put("edges", edgeList);
@@ -79,12 +79,12 @@ public class EventConverterStaxImpl extends CommandersLogParser {
 		}
 		long duration = System.currentTimeMillis() - ts;
 		log.info("End nach " + duration + " ms");
-		
+
 	}
 
 	public static void main(String[] args) {
 		try {
-			LogManager.getLogManager().readConfiguration(new FileInputStream("watcher-logging.properties"));
+			LogManager.getLogManager().readConfiguration(new FileInputStream("config/watcher-logging.properties"));
 		} catch (IOException exception) {
 			log.log(Level.SEVERE, "Error in loading logging configuration", exception);
 		}
