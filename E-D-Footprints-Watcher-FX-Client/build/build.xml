@@ -17,6 +17,7 @@
 		<delete dir="project" />
 		<delete dir="projectRefs" />
 		<delete dir="dist" />
+		<delete dir="deploy" />
 
 		<mkdir dir="externalLibs" />
 
@@ -130,11 +131,17 @@
 		    <fileset dir="../distConfig" />
 		</copy>
 
+		<mkdir dir="dist/logs" />
+		<copy todir="dist/logs" >
+		    <fileset dir="../distLogs" />
+		</copy>
+
 		<fx:resources id="appRes">
 			<fx:fileset dir="dist" includes="E-D-Footprints-Watcher-FX-Client.jar"/>
 			<fx:fileset dir="dist" includes="libs/*"/>
 			<fx:fileset dir="dist" includes="resources/**"/>
 			<fx:fileset dir="dist" includes="config/**"/>
+			<fx:fileset dir="dist" includes="logs/**"/>
 		</fx:resources>
 
 		<fx:application id="fxApplication"
@@ -155,7 +162,7 @@
 			<manifest>
 				<attribute name="Implementation-Vendor" value="discoveration.de"/>
 				<attribute name="Implementation-Title" value="E-D-Footprints-Watcher"/>
-				<attribute name="Implementation-Version" value="1.1.0"/>
+				<attribute name="Implementation-Version" value="1.1.1"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
 			</manifest>
 		</fx:jar>

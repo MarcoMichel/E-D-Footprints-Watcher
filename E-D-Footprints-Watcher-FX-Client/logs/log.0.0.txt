@@ -1,0 +1,28 @@
+[So Aug 02 04:59:20 MESZ 2015] INFORMATION: Starting with following state:
+[So Aug 02 04:59:20 MESZ 2015] INFORMATION: Last Match: 1021
+[So Aug 02 04:59:20 MESZ 2015] INFORMATION: Last file: D:/Git/E-D-Footprints-Watcher/E-D-Footprints-Watcher/netLog.1505111649.02.log
+[So Aug 02 04:59:20 MESZ 2015] INFORMATION: Current system: Beta Y
+[So Aug 02 04:59:20 MESZ 2015] INFORMATION: Reading Property-File config/watcher-user.properties
+[So Aug 02 04:59:21 MESZ 2015] INFORMATION: starting watcher
+[So Aug 02 04:59:21 MESZ 2015] INFORMATION: Checking Prerequisites...
+[So Aug 02 04:59:23 MESZ 2015] INFORMATION: Server online.
+[So Aug 02 04:59:23 MESZ 2015] INFORMATION: Commander is registert.
+[So Aug 02 04:59:23 MESZ 2015] INFORMATION: Verbose Logging active.
+[So Aug 02 04:59:23 MESZ 2015] INFORMATION: Starting collecting footprints....
+[So Aug 02 04:59:23 MESZ 2015] INFORMATION: Watching path: D:\Git\E-D-Footprints-Watcher\E-D-Footprints-Watcher
+[So Aug 02 04:59:27 MESZ 2015] INFORMATION: Stopping Application.
+[So Aug 02 04:59:27 MESZ 2015] WARNUNG: Directory-Watching has been interrupted
+[So Aug 02 04:59:53 MESZ 2015] INFORMATION: Starting with following state:
+[So Aug 02 04:59:53 MESZ 2015] INFORMATION: Last Match: 1021
+[So Aug 02 04:59:53 MESZ 2015] INFORMATION: Last file: D:/Git/E-D-Footprints-Watcher/E-D-Footprints-Watcher/netLog.1505111649.02.log
+[So Aug 02 04:59:53 MESZ 2015] INFORMATION: Current system: Beta Y
+[So Aug 02 04:59:53 MESZ 2015] INFORMATION: Reading Property-File config/watcher-user.properties
+[So Aug 02 04:59:54 MESZ 2015] INFORMATION: starting watcher
+[So Aug 02 04:59:54 MESZ 2015] INFORMATION: Checking Prerequisites...
+[So Aug 02 04:59:57 MESZ 2015] INFORMATION: Server online.
+[So Aug 02 04:59:57 MESZ 2015] INFORMATION: Commander is registert.
+[So Aug 02 04:59:57 MESZ 2015] INFORMATION: Verbose Logging active.
+[So Aug 02 04:59:57 MESZ 2015] INFORMATION: Starting collecting footprints....
+[So Aug 02 04:59:57 MESZ 2015] INFORMATION: Watching path: D:\Git\E-D-Footprints-Watcher\E-D-Footprints-Watcher
+[So Aug 02 04:59:59 MESZ 2015] INFORMATION: Stopping Application.
+[So Aug 02 04:59:59 MESZ 2015] WARNUNG: Directory-Watching has been interrupted
