@@ -105,10 +105,10 @@ public class WatcherMainApp extends Application {
 		getMessageData().add("Commander not registert.");
 		boolean ok = showSettingsEditDialog();
 		if (ok) {
-			log.info("Starting registration");
+			log.info("Starting registration.");
+			getMessageData().add("Starting registration. Please wait...");
 			settings.adoptSettings(watcherService.getWatcherConfig());
 			watcherService.startRegistration();
-			getMessageData().add("Step 1 of registration complete. Restart watcher.");
 		} else {
 			log.info("Registration canceled.");
 			getMessageData().add("Registration canceled.");

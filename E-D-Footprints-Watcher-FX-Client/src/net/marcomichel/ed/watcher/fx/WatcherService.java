@@ -62,6 +62,16 @@ public class WatcherService extends Service<Void>implements IModelObserver {
 	}
 
 	public void startRegistration() {
-		watcher.startRegistration();
+		Task<Void> task = new Task<Void>() {
+			@Override protected Void call() throws Exception {
+				watcher.startRegistration();
+				addMessage("Step 1 of registration complete. Restart watcher.");
+				return null;
+			}
+		};
+
+		Thread th = new Thread(task);
+        th.setDaemon(true);
+        th.start();
 	}
 }
