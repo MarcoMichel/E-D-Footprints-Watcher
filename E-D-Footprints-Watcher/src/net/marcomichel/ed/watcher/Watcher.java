@@ -234,6 +234,18 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 	}
 
 	/**
+	 * Setzt das Verbose Logging in Elite Dangerous
+	 * @throws IOException wenn die Konfiguration vom Spiel nicht geändert werden kann
+	 */
+	public void setVerboseLogging() throws IOException {
+		log.fine("Setting verbose logging.");
+		GameConfigParser parser = new GameConfigParser(config.getProperty(GAME_CONFIG));
+		String bak = parser.setVerboseLogging();
+		log.info("Verbose Logging set. Made backup of original GameConfigFile: " + bak);
+		modelObserver.addMessage("Verbose Logging set. Made backup of original GameConfigFile: " + bak);
+	}
+
+	/**
 	 * Prüft, ob de E:D-Footprints Server erreichbar ist.
 	 * @throws ServerNotOnlineException wenn der Server nicht erreichbar ist
 	 */
