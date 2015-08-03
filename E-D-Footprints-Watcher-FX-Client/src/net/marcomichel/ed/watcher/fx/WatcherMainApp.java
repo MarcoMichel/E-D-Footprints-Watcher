@@ -93,8 +93,8 @@ public class WatcherMainApp extends Application {
 		Throwable t = watcherService.getException();
 		if (t instanceof CmdrNotRegistertException) {
 			onCmdNotRegistert();
-//		} else if (t instanceof NoVerboseLoggingException) {
-//			onNoVerboseLogging();
+		} else if (t instanceof NoVerboseLoggingException) {
+			onNoVerboseLogging();
 		} else {
 			onGeneralError(t);
 		}
@@ -120,17 +120,20 @@ public class WatcherMainApp extends Application {
 		getMessageData().add("Verbose Logging not active.");
 		Alert alert = new Alert(AlertType.CONFIRMATION);
 		alert.setTitle("Verbose Logging");
-		alert.setHeaderText("Verbose logging not set.");
+		alert.setHeaderText("Verbose logging not active.");
 		alert.setContentText("Verbose logging of Elite Dangerous is not set. I can't detect any jumps.\nShould I set it for you?");
 
 		Optional<ButtonType> result = alert.showAndWait();
 		if (result.get() == ButtonType.OK){
 		    log.info("Setting verbose Logging.");
 			getMessageData().add("Setting verbose Logging.");
+			watcherService.setVerboseLogging();
 		    watcherService.reset();
 		    watcherService.start();
 		} else {
 			log.info("Verbose Logging still inactive.");
+			getMessageData().add("Verbose logging is still inavtive. Watch-Service stopped.");
+			getMessageData().add("Set verbose logging manually and restart Watcher.");
 		    watcherService.reset();
 		}
 	}

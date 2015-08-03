@@ -2,6 +2,7 @@ package net.marcomichel.ed.watcher.fx;
 
 import java.io.IOException;
 import java.util.Properties;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javafx.application.Platform;
@@ -63,7 +64,7 @@ public class WatcherService extends Service<Void>implements IModelObserver {
 
 	public void startRegistration() {
 		Task<Void> task = new Task<Void>() {
-			@Override protected Void call() throws Exception {
+			@Override protected Void call() {
 				watcher.startRegistration();
 				addMessage("Step 1 of registration complete. Restart watcher.");
 				return null;
@@ -73,5 +74,25 @@ public class WatcherService extends Service<Void>implements IModelObserver {
 		Thread th = new Thread(task);
         th.setDaemon(true);
         th.start();
+	}
+
+	public void setVerboseLogging() {
+		Task<Void> task = new Task<Void>() {
+			@Override protected Void call() {
+				try {
+					watcher.setVerboseLogging();
+					addMessage("Verbose Logging set.");
+				} catch (IOException e) {
+					log.log(Level.SEVERE, "Cannot set verbose logging.", e);
+					addMessage("Cannot set verbose logging.");
+				}
+				return null;
+			}
+		};
+
+		Thread th = new Thread(task);
+        th.setDaemon(true);
+        th.start();
+
 	}
 }
