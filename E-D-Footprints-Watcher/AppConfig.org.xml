@@ -1,0 +1,73 @@
+<AppConfig>
+	<Display>
+		<ScreenWidth>1280</ScreenWidth> 
+		<ScreenHeight>720</ScreenHeight> 
+		<FullScreen>false</FullScreen> 
+		<VSync>true</VSync>
+		<PresentInterval>1</PresentInterval>
+		<Adapter>0</Adapter>
+		<Monitor>0</Monitor> 
+		<DX11_RefreshRateNumerator>60</DX11_RefreshRateNumerator>
+		<DX11_RefreshRateDenominator>1</DX11_RefreshRateDenominator>
+		<LimitFrameRate>false</LimitFrameRate>
+		<MaxFramesPerSecond>30</MaxFramesPerSecond>
+		<!-- If you are looking for the SSAA setting this has moved in to Settings.xml in the save directory
+		  ** typically: C:\Users\{username}\AppData\Roaming\Frontier Developments\Elite Dangerous\Options\Graphics.
+		  ** If this file does not exist you can generate it by entering the graphics options screen in game
+		  ** and hitting apply. You can then add <SSAA>X</SSAA> when X is the SSAA amount (1 by default) -->
+	</Display>
+	
+	<Threads
+		RenderThreadStackSize="1048576"
+		WorkerThreadStackSize="1048576"
+		NumWorkerThreads="6"
+		RenderJobQueueSize="10240"
+		KernelJobQueueSize="10240"
+		MinSpareCores="0"
+		OptimiseForPerformance="1"
+		UseThreadPriorities="0"
+		PerformanceScaling="1"
+	/>
+	
+	<Files
+		MaxLoadRetries="10"
+	/>
+
+	<!--
+		In the <PlanetNoiseTextures> tag:
+		- On Windows, Enabled="auto" is equivalent to Enabled="1".
+		- On OSX, Enabled="auto" is equivalent to Enabled="1" unless the GPU
+		  model name shown in the game's 'graphic options' screen is (ignoring
+		  case) one of those listed in the <AutoDisableOnOsx> child tags of the
+		  of the <PlanetNoiseTextures> tag.
+		- On both Windows and OSX, ShaderWarmingEnabled="auto" enables shader
+		  warming if the GPU detected by the game is an NVIDIA model, and
+		  disables shader warming otherwise.
+	-->
+	<PlanetNoiseTextures
+		Enabled="auto"
+		ShaderWarmingEnabled="auto"
+		ShaderWarmingDialogAnimTimeInMs="600">
+
+		<AutoDisableOnOsx>ATI Radeon HD 2400</AutoDisableOnOsx>
+		<AutoDisableOnOsx>ATI Radeon HD 2600 Pro</AutoDisableOnOsx>
+		<AutoDisableOnOsx>ATI Radeon HD 5770</AutoDisableOnOsx>
+		<AutoDisableOnOsx>ATI Radeon HD 5870</AutoDisableOnOsx>
+		<AutoDisableOnOsx>ATI Radeon HD 6800 Series</AutoDisableOnOsx>
+		<AutoDisableOnOsx>AMD Radeon HD 6970M</AutoDisableOnOsx>
+		<AutoDisableOnOsx>AMD Radeon HD 6870 Series</AutoDisableOnOsx>
+		<AutoDisableOnOsx>AMD Radeon HD 6xxx</AutoDisableOnOsx>
+		<AutoDisableOnOsx>Intel HD Graphics 3000</AutoDisableOnOsx>
+		<AutoDisableOnOsx>NVIDIA GeForce GT 120</AutoDisableOnOsx>
+
+	</PlanetNoiseTextures>
+
+	<Network
+	  Port="0"
+      upnpenabled="1"
+	  LogFile="netLog"
+	  DatestampLog="1"
+	  >
+	</Network>
+  <GameObjects />
+</AppConfig>
