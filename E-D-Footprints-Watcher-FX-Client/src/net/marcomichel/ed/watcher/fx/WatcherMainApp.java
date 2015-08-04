@@ -11,6 +11,7 @@ import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -108,7 +109,10 @@ public class WatcherMainApp extends Application {
 			log.info("Starting registration.");
 			getMessageData().add("Starting registration. Please wait...");
 			settings.adoptSettings(watcherService.getWatcherConfig());
-			watcherService.startRegistration();
+			Task<Void> task = watcherService.startRegistration();
+			task.setOnSucceeded(event -> {
+				getMessageData().add("Step 1 of registration complete. Restart watcher.");
+			});
 		} else {
 			log.info("Registration canceled.");
 			getMessageData().add("Registration canceled.");
@@ -127,9 +131,17 @@ public class WatcherMainApp extends Application {
 		if (result.get() == ButtonType.OK){
 		    log.info("Setting verbose Logging.");
 			getMessageData().add("Setting verbose Logging.");
-			watcherService.setVerboseLogging();
-		    watcherService.reset();
-		    watcherService.start();
+			Task<Void> task = watcherService.setVerboseLogging();
+			task.setOnSucceeded(event -> {
+			    getMessageData().add("Starting Watch-Service...");
+			    watcherService.reset();
+			    watcherService.start();
+			});
+			task.setOnFailed(event -> {
+				Throwable t = task.getException();
+				log.log(Level.SEVERE, "Cannot set verbose logging.", t);
+				getMessageData().add("Cannot set verbose logging: " + t.toString());
+			});
 		} else {
 			log.info("Verbose Logging still inactive.");
 			getMessageData().add("Verbose logging is still inavtive. Watch-Service stopped.");
