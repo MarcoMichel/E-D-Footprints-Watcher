@@ -162,7 +162,7 @@
 			<manifest>
 				<attribute name="Implementation-Vendor" value="discoveration.de"/>
 				<attribute name="Implementation-Title" value="E-D-Footprints-Watcher"/>
-				<attribute name="Implementation-Version" value="1.1.1"/>
+				<attribute name="Implementation-Version" value="1.2.0"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
 			</manifest>
 		</fx:jar>
