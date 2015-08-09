@@ -90,4 +90,23 @@ public class WatcherService extends Service<Void>implements IModelObserver {
 
         return task;
 	}
+
+	public Task<Void> publishOnline() {
+		Task<Void> task = new Task<Void>() {
+			@Override protected Void call() throws IOException {
+				watcher.publishOnline();
+				return null;
+			}
+		};
+
+		Thread th = new Thread(task);
+        th.setDaemon(true);
+        th.start();
+
+        return task;
+	}
+
+	public void publishOffline() {
+		watcher.publishOffline();
+	}
 }

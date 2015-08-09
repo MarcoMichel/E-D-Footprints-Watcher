@@ -88,6 +88,7 @@ public class WatcherMainApp extends Application {
         initRootLayout();
         showWatcherStatusScene();
     	watcherService.start();
+    	watcherService.publishOnline();
     }
 
 	private void selectWatcherFailedStrategy() {
@@ -167,6 +168,7 @@ public class WatcherMainApp extends Application {
 	public void stop() throws Exception {
     	log.info("Stopping Application.");
     	watcherService.cancel();
+    	watcherService.publishOffline();
 		super.stop();
 	}
 
