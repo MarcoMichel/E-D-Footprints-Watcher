@@ -153,15 +153,18 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 		obj.put("id", config.getProperty(CMDR_ID));
 		log.info(obj.toJSONString());
 		modelObserver.onSystemChange(to);
+		modelObserver.addMessage("Send jump event from " + from + " to " + to);
+		publishEvent(obj);
+	}
 
+	private void publishEvent(JSONObject event) {
 		boolean success = false;
 		int retry = 0;
 		while (!success && retry<3) {
 			try {
-				sendPost(obj, config.getProperty(SERVER_URL) + "/publish");
+				sendPost(event, config.getProperty(SERVER_URL) + "/publish");
 				success = true;
-				log.info("Jump event send.");
-				modelObserver.addMessage("Send jump event from " + from + " to " + to);
+				log.info("sending event");
 			} catch (IOException e) {
 				log.log(Level.SEVERE, "Could not send event to server. " + e.toString(), e);
 				retry++;
@@ -174,7 +177,7 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 					}
 				} else {
 					log.info("Could not send event. No more retrys for this event.");
-					modelObserver.addMessage("Server problems. Could not send jump event from " + from + " to " + to);
+					modelObserver.addMessage("Server problems. Could not send event.");
 				}
 			}
 		}
@@ -243,6 +246,27 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 		String bak = parser.setVerboseLogging();
 		log.info("Verbose Logging set. Made backup of original GameConfigFile: " + bak);
 		modelObserver.addMessage("Verbose Logging set. Made backup of original GameConfigFile: " + bak);
+	}
+
+	@SuppressWarnings("unchecked")
+	private void publishStatusChange(String status) {
+		// JSON_Objekt mit dem Event erzeugen und verschicken
+		JSONObject obj = new JSONObject();
+		obj.put("cmdr", config.getProperty(CMDR_NAME));
+		obj.put("event", "status.change");
+		obj.put("status", status);
+		obj.put("id", config.getProperty(CMDR_ID));
+		log.info(obj.toJSONString());
+		modelObserver.addMessage("Sending Status " + status);
+		publishEvent(obj);
+	}
+
+	public void publishOnline() {
+		publishStatusChange("online");
+	}
+
+	public void publishOffline() {
+		publishStatusChange("offline");
 	}
 
 	/**
