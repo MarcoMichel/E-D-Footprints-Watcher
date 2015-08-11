@@ -43,6 +43,7 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 	// Keys für das Property File mit der Config
 	public static final String GAME_CONFIG         	= "gameconfig";
 	public static final String DIRECTORY_TO_WATCH	= "directory";
+	public static final String FILE_SCAN_INTERVAL   = "scan-interval";
 	public static final String SERVER_URL			= "server-url";
 	public static final String CMDR_NAME			= "cmdr";
 	public static final String CMDR_ID 				= "id";
@@ -53,6 +54,8 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
     private String userConfigFile;
     // Parser mit dem das Log-File geparst wird
 	private IParser parser = new GameLogFileParser(this);
+	// Parser mi dem das game config file geparst wird
+	private GameConfigParser gameConfig;
 	// Observer über den die GUI informiert wird
 	private IModelObserver modelObserver;
 
@@ -78,6 +81,8 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 		} catch (IOException e) {
 			log.warning("No user configuration. File not found: " + propertyFile);
 		}
+
+		gameConfig = new GameConfigParser(config.getProperty(GAME_CONFIG));
 	}
 
 	/**
@@ -294,8 +299,7 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 	 */
 	private void checkVerboseLogging() throws IOException, NoVerboseLoggingException {
 		log.fine("Checking verbose logging.");
-		GameConfigParser parser = new GameConfigParser(config.getProperty(GAME_CONFIG));
-		boolean verbose = parser.isVerboseLogging();
+		boolean verbose = gameConfig.isVerboseLogging();
 		if (!verbose) {
 			throw new NoVerboseLoggingException("Logging of Elite Dangerous is not verbose. Cannot detect any jumps. Please set logging to verbose.");
 		}
@@ -330,7 +334,7 @@ public class Watcher extends DirectoryWatcher implements IJumpToCallBack {
 		checkVerboseLogging();
 		log.info("Starting collecting footprints....");
 		modelObserver.addMessage("Starting collecting footprints....");
-		watchDirectoryPath(config.getProperty(DIRECTORY_TO_WATCH));
+		watchDirectoryPath(config.getProperty(DIRECTORY_TO_WATCH), gameConfig.getLogFileBaseName(), Integer.parseInt(config.getProperty(FILE_SCAN_INTERVAL)));
 	}
 
 	public static void main(String[] args) throws Exception {

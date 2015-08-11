@@ -13,7 +13,11 @@ import java.nio.file.Paths;
 import java.nio.file.WatchEvent;
 import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
+import java.nio.file.attribute.FileTime;
 import java.nio.file.WatchEvent.Kind;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -31,12 +35,14 @@ public abstract class DirectoryWatcher {
 	private static final Logger log = Logger.getLogger(DirectoryWatcher.class
 			.getName());
 
+	private Path newestFile = null;
+
 	/**
 	 * Startet die Überwachung eines angegebenen Verzeichnisses.
 	 *
 	 * @param dir der Pfad des Verzeichnisses, das überwacht werden soll
 	 */
-	protected void watchDirectoryPath(String dir) {
+	protected void watchDirectoryPath(String dir, String fileBaseName, int scanIntervall) {
 		Path path = Paths.get(dir);
 		// Sanity check - Check if path is a folder
 		try {
@@ -48,10 +54,26 @@ public abstract class DirectoryWatcher {
 			}
 		} catch (IOException ioe) {
 			// Folder does not exists
-			log.log(Level.SEVERE, "Foldes does not exists.", ioe);
+			log.log(Level.SEVERE, "Folder does not exists.", ioe);
 		}
 
 		log.info("Watching path: " + path);
+
+		// this is a hack!
+		// WatchService does not receive any modify events when the game is running
+		// and has focus. Must touch the actual log-file frequently to get modify event
+		ExecutorService executor = Executors.newSingleThreadExecutor();
+		executor.submit(() -> {
+			while(true) {
+				if (newestFile != null) {
+					log.finest("touching file " + newestFile);
+					long timestamp = System.currentTimeMillis();
+					FileTime ft = FileTime.fromMillis(timestamp);
+		            Files.setLastModifiedTime(newestFile, ft);
+				}
+	            TimeUnit.SECONDS.sleep(scanIntervall);
+			}
+		});
 
 		// We obtain the file system of the Path
 		FileSystem fs = path.getFileSystem();
@@ -76,10 +98,19 @@ public abstract class DirectoryWatcher {
 					if (OVERFLOW == kind) {
 						continue; // loop
 					} else if (ENTRY_CREATE == kind) {
-						log.fine(watchEvent.kind() + " event received for file " + watchEvent.context());
-						onModFile(watchEvent.context().toString());
+						// when a file is created, look if it matches the pattern for a log-file
+						// and store the file for the ExecutorService to touch it frequently
+						final String file = watchEvent.context().toString();
+						log.fine(watchEvent.kind() + " event received for file " + file);
+						if (file.startsWith(fileBaseName)) {
+							final StringBuilder sb = new StringBuilder();
+							sb.append(dir).append("/").append(file);
+							newestFile = Paths.get(sb.toString());
+							log.finer("Storing file as newest: " + newestFile);
+						}
+						onModFile(file);
 					} else if (ENTRY_MODIFY == kind) {
-						log.fine(watchEvent.kind() + " event received for file " + watchEvent.context());
+						log.finer(watchEvent.kind() + " event received for file " + watchEvent.context());
 						onModFile(watchEvent.context().toString());
 					}
 				}
@@ -88,11 +119,17 @@ public abstract class DirectoryWatcher {
 					break; // loop
 				}
 			}
+			executor.shutdown();
 
 		} catch (IOException ioe) {
 			log.log(Level.SEVERE, "Error watching path", ioe);
 		} catch (InterruptedException ie) {
 			log.log(Level.WARNING, "Directory-Watching has been interrupted");
+		} finally {
+		    if (!executor.isTerminated()) {
+		        log.warning("cancel non-finished tasks");
+		    }
+		    executor.shutdownNow();
 		}
 	}
 
