@@ -45,18 +45,31 @@ public class GameConfigParser {
 		 return document;
 	}
 
-	private String getVerboseLogging(Document doc) throws XPathExpressionException {
+	private String getConfigValue(Document doc, String xpathExpr) throws XPathExpressionException {
 		XPath xPath = XPathFactory.newInstance().newXPath();
-		XPathExpression expr = xPath.compile("//Network/@VerboseLogging");
+		XPathExpression expr = xPath.compile(xpathExpr);
 		String attributeValue = (String) expr.evaluate(doc, XPathConstants.STRING);
 		return attributeValue;
+	}
+
+	public String getLogFileBaseName() throws IOException {
+		try {
+			final Document doc = parseGameConfig(file);
+			final String baseName = getConfigValue(doc, "//Network/@LogFile");
+			log.fine("Log-File base name is " + baseName);
+			return baseName;
+		} catch (ParserConfigurationException | SAXException | XPathExpressionException e) {
+			log.log(Level.SEVERE, "Error parsing Game-Config", e);
+			throw new IOException("Error parsing Game-Config.");
+		}
+
 	}
 
 	public boolean isVerboseLogging() throws IOException {
 		String logging = "";
 		try {
-			Document doc = parseGameConfig(file);
-			logging = getVerboseLogging(doc);
+			final Document doc = parseGameConfig(file);
+			logging = getConfigValue(doc, "//Network/@VerboseLogging");
 		} catch (ParserConfigurationException | SAXException | XPathExpressionException e) {
 			log.log(Level.SEVERE, "Error parsing Game-Config", e);
 			throw new IOException("Error parsing Game-Config.");
