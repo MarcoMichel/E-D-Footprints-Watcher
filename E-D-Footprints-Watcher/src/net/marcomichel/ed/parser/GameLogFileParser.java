@@ -143,6 +143,13 @@ public class GameLogFileParser implements IParser {
 	}
 
 	/**
+	 * @return das aktuelle System
+	 */
+	public String getCurrentSystem() {
+		return currentSystem;
+	}
+
+	/**
 	 * @see net.marcomichel.ed.parser.IParser
 	 */
 	public void parseFile(String file) {
