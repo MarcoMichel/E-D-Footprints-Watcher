@@ -9,6 +9,7 @@ import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 import net.marcomichel.ed.watcher.IModelObserver;
 import net.marcomichel.ed.watcher.Watcher;
+import net.marcomichel.ed.watcher.WatcherConfig;
 
 public class WatcherService extends Service<Void>implements IModelObserver {
 
@@ -24,13 +25,19 @@ public class WatcherService extends Service<Void>implements IModelObserver {
 	}
 
 	@Override
+	public boolean cancel() {
+		watcher.stopWatching();
+		return super.cancel();
+	}
+
+	@Override
 	protected Task<Void> createTask() {
 		return new Task<Void>() {
 
 			@Override
 			protected Void call() throws Exception {
 				log.info("starting watcher");
-				watcher.watch();
+				watcher.startWatching();
 				return null;
 			}
 		};
@@ -55,10 +62,6 @@ public class WatcherService extends Service<Void>implements IModelObserver {
 				mainApp.getSettings().setCurrentSystem(currentSystem);
 			}
 		});
-	}
-
-	public Properties getWatcherConfig() {
-		return watcher.getConfig();
 	}
 
 	public Task<Void> startRegistration() {
@@ -91,22 +94,4 @@ public class WatcherService extends Service<Void>implements IModelObserver {
         return task;
 	}
 
-	public Task<Void> publishOnline() {
-		Task<Void> task = new Task<Void>() {
-			@Override protected Void call() throws IOException {
-				watcher.publishOnline();
-				return null;
-			}
-		};
-
-		Thread th = new Thread(task);
-        th.setDaemon(true);
-        th.start();
-
-        return task;
-	}
-
-	public void publishOffline() {
-		watcher.publishOffline();
-	}
 }
